@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ольга Эгенбург](https://up.htmlacademy.ru/adaptive/26/user/2068051).
-* Наставник: `Неизвестно`.
+* Наставник: `[Кристина Новикова](https://up.htmlacademy.ru/profile/stina)`.
 
 ---
 
