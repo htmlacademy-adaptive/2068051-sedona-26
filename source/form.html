@@ -46,16 +46,68 @@
       </section>
       <section class="main-form">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <h2 class="main-form__title">Представьтесь:</h2>
-          <label for="main-form__input" class="main-form__label">ИМЯ*:</label>
-        <input class="main-form__input input" type="text" id="main-form__input" name="main-form__input" placeholder="Пётр" required>
-        <label for="main-form__input" class="main-form__label">ФАМИЛИЯ*:</label>
-        <input class="main-form__input input" type="text" id="main-form__input" name="main-form__input" placeholder="" required>
-        <label for="main-form__input" class="main-form__label">Отчество:</label>
-        <input class="main-form__input input" type="text" id="main-form__input" name="main-form__input" placeholder="Викторович">
-        <h2 class="main-form__title">Контактная информация:</h2>
-        <label for="main-form__input" class="main-form__label">Контактный телефон*:</label>
-        <input class="main-form__input input" type="text" id="main-form__input" name="main-form__input" placeholder="Викторович" required>
+          <div>
+            <h2 class="main-form__title">Представьтесь:</h2>
+            <label for="main-form__input" class="main-form__label">ИМЯ*:</label>
+            <input class="main-form__input input" type="text" id="main-form__input" name="main-form__input" placeholder="Пётр" required>
+            <label for="main-form__input" class="main-form__label">ФАМИЛИЯ*:</label>
+            <input class="main-form__input input" type="text" id="main-form__input" name="main-form__input" placeholder="" required>
+            <label for="main-form__input" class="main-form__label">Отчество:</label>
+            <input class="main-form__input input" type="text" id="main-form__input" name="main-form__input" placeholder="Викторович">
+          </div>
+          <div class="main-form__contacts contacts-details">
+            <h2 class="contacts-details__title">Контактная информация:</h2>
+            <label for="contacts-details__input" class="contacts-details__label">Контактный телефон*:</label>
+            <input class="contacts-details__input contacts-details__input--phone input" type="number" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
+            <label for="contacts-details__input" class="contacts-details__label">Контактный телефон*:</label>
+            <input class="contacts-details__input contacts-details__input--email input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
+          </div>
+          <fieldset class="main-form__oppinion oppinion">
+            <legend class="oppinion__title">ВАше Общее впечатление:</legend>
+            <label class="oppinoin__label">
+              <input class="oppimion__input visually-hidden" type="radio" name="oppinion" value="good" checked>
+              <span class="oppinion__radio"></span>
+              <span class="oppinion__text">Скорее положительное</span>
+            </label>
+            <label class="oppinoin__label">
+              <input class="oppimion__input visually-hidden" type="radio" name="oppinion" value="bad">
+              <span class="oppinion__radio"></span>
+              <span class="oppinion__text">Скорее отрицательное</span>
+            </label>
+            <label class="oppinoin__label">
+              <input class="oppimion__input visually-hidden" type="radio" name="oppinion" value="nothing">
+              <span class="oppinion__radio"></span>
+              <span class="oppinion__text">Затрудняюсь ответить</span>
+            </label>
+          </fieldset>
+          <fieldset class="main-form__sights sights">
+            <legend class="sights__title">посещенные достопримечательности:</legend>
+            <label class="sights__label">
+              <input class="sights__input visually-hidden" type="checkbox" name="bridge" checked>
+              <span class="sights__checkbox"></span>
+              <span class="sights__text">Мост Дьявола</span>
+            </label>
+            <label class="sights__label">
+              <input class="sights__input visually-hidden" type="checkbox" name="bell-mountin" checked>
+              <span class="sights__checkbox"></span>
+              <span class="sights__text">Гора-Колокол</span>
+            </label>
+            <label class="sights__label">
+              <input class="sights__input visually-hidden" type="checkbox" name="slide-park" checked>
+              <span class="sights__checkbox"></span>
+              <span class="sights__text">Слайд-парк</span>
+            </label>
+            <label class="sights__label">
+              <input class="sights__input visually-hidden" type="checkbox" name="rocks">
+              <span class="sights__checkbox"></span>
+              <span class="sights__text">Красные скалы</span>
+            </label>
+          </fieldset>
+          <div class="">
+            <h2>Опишите свои эмоции:</h2>
+            <textarea name="comment" id="comment-field" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
+          <button class="button main-form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
         </form>
       </section>
     </main>
