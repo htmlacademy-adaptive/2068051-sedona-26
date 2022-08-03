@@ -1,0 +1,24 @@
+.site-list {
+  font-weight: 700;
+  list-style-type: none;
+  background-color: #81b3d2;
+  padding-left: 0;
+}
+
+.site-list__item {
+  text-transform: uppercase;
+  box-shadow: 0px 1px 0px rgba(1, 1, 1, 0.2), inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  &:last-child {
+    box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+  }
+}
+
+.site-list__link {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 17px 83px 12px 81px;
+}
