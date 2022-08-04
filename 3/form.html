@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="../source/css/style.css">
     <base href="https://htmlacademy-adaptive.github.io/2068051-sedona-26/3/">
 </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo">
-        <img class="main-header__logo-image" src="/source/img/logo.svg" width="185" height="96" alt="Логотип Седона.">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="../source/img/logo.svg" width="185" height="96" alt="Логотип Седона.">
       </a>
       <nav class="main-header__nav main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,8 +17,8 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--curent">
-              <a>
+            <li class="site-list__item">
+              <a href="index.html">
                 Главная
               </a>
             </li>
@@ -26,8 +27,8 @@
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item">
-              <a href="#">
+            <li class="site-list__item site-list__item--curent">
+              <a>
                 Форма Отзыва
               </a>
             </li>
@@ -104,7 +105,7 @@
               <span class="sights__text">Красные скалы</span>
             </label>
           </fieldset>
-          <div class="">
+          <div class="emotions">
             <h2>Опишите свои эмоции:</h2>
             <textarea name="comment" id="comment-field" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
