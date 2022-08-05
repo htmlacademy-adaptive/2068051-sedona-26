@@ -1,0 +1,50 @@
+// .advantages {
+//   counter-set: advantage;
+// }
+
+.advantages__list {
+  counter-set: advantage;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.advantages__item {
+  &--city {
+    background-color: #81b3d2;
+    color: #ffffff;
+    margin: 0;
+  }
+  &--bridge {
+    background-color: #81b3d2;
+    color: #ffffff;
+    margin: 0;
+  }
+  &--places {
+    background-color: #eeeeee;
+  }
+  &--order::before {
+    display: block;
+    counter-increment: advantage;
+    content: "— №" counter(advantage) " —";
+    order: -1;
+  }
+}
+.advantages__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  order: 1;
+}
+
+.advantages__description {
+  // font-weight: 700;
+  text-transform: uppercase;
+  order: 2;
+}
+
+.advantages__container-food-etc {
+  list-style: none;
+}
