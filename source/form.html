@@ -16,23 +16,23 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="index.html">
+            <li class="site-list__item site-list__item--curent">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__link" href="catalog.html">
                 Фото и видео
               </a>
             </li>
-            <li class="site-list__item site-list__item--curent">
-              <a>
+            <li class="site-list__item">
+              <a class="site-list__link">
                 Форма Отзыва
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 HTML ACADEMY
               </a>
             </li>
@@ -49,12 +49,12 @@
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <div>
             <h2 class="main-form__title">Представьтесь:</h2>
-            <label for="main-form__input" class="main-form__label">ИМЯ*:</label>
-            <input class="main-form__input input" type="text" id="main-form__input" name="main-form__input" placeholder="Пётр" required>
-            <label for="main-form__input" class="main-form__label">ФАМИЛИЯ*:</label>
-            <input class="main-form__input input" type="text" id="main-form__input" name="main-form__input" placeholder="" required>
-            <label for="main-form__input" class="main-form__label">Отчество:</label>
-            <input class="main-form__input input" type="text" id="main-form__input" name="main-form__input" placeholder="Викторович">
+            <label for="name" class="main-form__label">ИМЯ*:</label>
+            <input class="main-form__input input" type="text" id="name" name="name" placeholder="Пётр" required>
+            <label for="surname" class="main-form__label">ФАМИЛИЯ*:</label>
+            <input class="main-form__input input" type="text" id="surname" name="surname" placeholder="" required>
+            <label for="patronymic" class="main-form__label">Отчество:</label>
+            <input class="main-form__input input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
           </div>
           <div class="main-form__contacts contacts-details">
             <h2 class="contacts-details__title">Контактная информация:</h2>
@@ -142,5 +142,21 @@
       </div>
       </div>
     </footer>
+    <div class="modal-container modal-container--error">
+      <div class="modal-container__error modal-error">
+        <h2 class="modal-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h1>
+        <p class="modal-error__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-error__button button button--modal-error">OK</button>
+      </div>
+    </div>
+    <div class="modal-container modal-container--success">
+      <div class="modal-container__error modal-success">
+        <h2 class="modal-success__title">Ваш отзыв отправлен!</h1>
+        <p class="modal-success__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <div class="modal-success__button">
+          <button class="modal-container__button button button--modal-success">ЗАкРЫТЬ ОКНО</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

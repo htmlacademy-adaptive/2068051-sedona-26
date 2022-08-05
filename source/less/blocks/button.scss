@@ -1,16 +1,29 @@
 .button {
   text-transform: uppercase;
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: @blue;
+  color: @white;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   border: none;
   text-align: center;
+  padding-top: 16px;
+  padding-bottom: 14px;
 
   &--search {
     width: 284px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+  }
+
+  &--modal-error {
+    font-size: 18px;
+    padding-right: 64px;
+    padding-left: 63px;
+  }
+
+  &--modal-success {
+    font-size: 18px;
+    width: 280px;
+    padding-right: 62px;
+    padding-left: 60px;
   }
 }
