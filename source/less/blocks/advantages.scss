@@ -28,7 +28,7 @@
     display: block;
     counter-increment: advantage;
     content: "— №" counter(advantage) " —";
-    order: -1;
+    order: 2;
   }
 }
 .advantages__title {
@@ -47,4 +47,29 @@
 
 .advantages__container-food-etc {
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    width: 256px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .advantages__item--city,
+  .advantages__item--bridge {
+    display: flex;
+    width: 768px;
+  }
+  .advantages__picture {
+    width: 512px;
+    height: 256px;
+  }
+  .advantages__container-food-etc {
+    display: flex;
+  }
 }

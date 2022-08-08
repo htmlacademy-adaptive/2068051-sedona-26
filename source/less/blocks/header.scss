@@ -3,3 +3,15 @@
   margin-left: 67px;
   margin-right: 68px;
 }
+
+@media (min-width: @tablet-width) {
+  .main-header {
+    background-color: @white;
+    display: flex;
+  }
+  .main-header__logo {
+    order: 2;
+    position: absolute;
+    left: 230px;
+  }
+}

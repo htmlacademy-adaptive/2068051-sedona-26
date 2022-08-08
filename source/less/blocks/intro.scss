@@ -11,3 +11,10 @@
   line-height: 26px;
   text-transform: uppercase;
 }
+
+@media (min-width: @tablet-width) {
+  .intro__logo {
+    background-image: url("/Users/olga/2068051-sedona-26/source/img/back-desktop.jpg.jpg");
+    background-repeat: no-repeat;
+  }
+}
