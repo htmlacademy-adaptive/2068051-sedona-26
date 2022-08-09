@@ -56,6 +56,8 @@
   }
   .advantages__item {
     width: 256px;
+    min-height: 256px;
+    padding-top: 42px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -71,5 +73,15 @@
   }
   .advantages__container-food-etc {
     display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item {
+    width: 400px;
+  }
+  .advantages__item--city,
+  .advantages__item--bridge {
+    width: 1200px;
   }
 }

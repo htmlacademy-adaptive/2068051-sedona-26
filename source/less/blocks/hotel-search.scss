@@ -3,6 +3,7 @@
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-transform: uppercase;
 }
 
 .hotel-search__description {
@@ -12,4 +13,18 @@
 
 .hotel-search__button {
   margin-bottom: 49px;
+}
+
+@media (min-width: @tablet-width) {
+  .hotel-search__description {
+    margin-left: 167px;
+    margin-right: 166px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hotel-search__description {
+    margin-left: 383px;
+    margin-right: 383px;
+  }
 }

@@ -3,6 +3,17 @@
   background-repeat: no-repeat;
   background-color: #2d1468;
   padding: 90px 19px 85px;
+  position: relative;
+}
+
+.intro__logo::after {
+  position: absolute;
+  background-image: url("/Users/olga/2068051-sedona-26/source/img/icons/intro-triangle.svg.svg");
+  content: "";
+  width: 320px;
+  height: 57px;
+  bottom: 0;
+  left: 0;
 }
 
 .intro__title {
@@ -16,5 +27,27 @@
   .intro__logo {
     background-image: url("/Users/olga/2068051-sedona-26/source/img/back-desktop.jpg.jpg");
     background-repeat: no-repeat;
+  }
+  .intro__logo::after {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro__title {
+    margin-left: 358px;
+    margin-right: 359px;
+  }
+  .intro__logo {
+    background-image: url("/Users/olga/2068051-sedona-26/source/img/back-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+  .intro__logo::after {
+    width: 1200px;
+    background-image: url("/Users/olga/2068051-sedona-26/source/img/icons/intro-triangle.svg");
+    content: "";
+    height: 57px;
+    bottom: 0;
+    left: 0;
   }
 }

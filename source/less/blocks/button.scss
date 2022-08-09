@@ -27,3 +27,9 @@
     padding-left: 60px;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .button--search {
+    width: 458px;
+  }
+}

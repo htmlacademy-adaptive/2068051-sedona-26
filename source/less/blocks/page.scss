@@ -7,8 +7,11 @@
   background-color: @white;
   color: #000000;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   @media (min-width: @tablet-width) {
     width: 768px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
   }
 }

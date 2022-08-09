@@ -7,3 +7,8 @@
   margin-bottom: 40px;
 }
 
+@media (min-width: @tablet-width) {
+  .main-footer__wrapper {
+    display: flex;
+  }
+}
