@@ -1,0 +1,87 @@
+// .advantages {
+//   counter-set: advantage;
+// }
+
+.advantages__list {
+  counter-set: advantage;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.advantages__item {
+  &--city {
+    background-color: @blue;
+    color: #ffffff;
+    margin: 0;
+  }
+  &--bridge {
+    background-color: @blue;
+    color: #ffffff;
+    margin: 0;
+  }
+  &--places {
+    background-color: @grey;
+  }
+  &--order::before {
+    display: block;
+    counter-increment: advantage;
+    content: "— №" counter(advantage) " —";
+    order: 2;
+  }
+}
+.advantages__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  order: 1;
+}
+
+.advantages__description {
+  // font-weight: 700;
+  text-transform: uppercase;
+  order: 2;
+}
+
+.advantages__container-food-etc {
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    width: 256px;
+    min-height: 256px;
+    padding-top: 42px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  .advantages__item--city,
+  .advantages__item--bridge {
+    display: flex;
+    width: 768px;
+  }
+  .advantages__picture {
+    width: 512px;
+    height: 256px;
+  }
+  .advantages__container-food-etc {
+    display: flex;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__item {
+    width: 400px;
+  }
+  .advantages__item--city,
+  .advantages__item--bridge {
+    width: 1200px;
+  }
+}
