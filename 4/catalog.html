@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <base href="https://htmlacademy-adaptive.github.io/2068051-sedona-26/4/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src=".img/logo.svg" width="185" height="96" alt="Логотип Седона.">
+      </a>
+      <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню.</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item site-list__item--curent">
+              <a class="site-list__link">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Форма Отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">
+                HTML ACADEMY
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="intro">
+        <div class="intro__logo">
+          <img class="intro__logo-image" alt="Логотип Welcome Sedona." src="img/text-sedona.svg"  width="229" height="39">
+        </div>
+      </section>
+      <section class="gallery">
+        <h1 class="gallery__title">Фото и видео</h1>
+        <p class="gallery__discription">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <ul class="gallery__list">
+          <li class="gallery__item card">
+            <a class="card__link" href="#">
+              <img class="card__photo" alt="неродные просторы." src="" width="280" height="280">
+            </a>
+            <a class="card__link" href="#">
+              <h3 class="card__title">неродные просторы</h3>
+            </a>
+            <p class="card__author">Автор фото: Борис</p>
+            <button class="card__button" type="button">
+              <span class="visually-hidden">Кнопка лайка.</span>
+            </button>
+            <p class="card__results">1350</p>
+          </li>
+          <li class="gallery__item card">
+            <a class="card__link" href="#">
+              <img class="card__photo" alt="неродные просторы." src="" width="280" height="280">
+            </a>
+            <a class="card__link" href="#">
+              <h3 class="card__title">Местная растительность</h3>
+            </a>
+            <p class="card_author">Автор фото: Сергей</p>
+            <button class="card__button" type="button">
+              <span class="visually-hidden">Кнопка лайка.</span>
+            </button>
+            <p class="card__results">143</p>
+          </li>
+          <li class="galery__item card">
+            <a class="card__link" href="#">
+              <img class="catalo__photo" alt="Дорога на север." src="" width="280" height="280">
+            </a>
+            <a class="card__link" href="#">
+              <h3 class="card__title">Дорога на север</h3>
+            </a>
+            <p class="card_author">Автор фото: Петр</p>
+            <button class="card__button" type="button">
+              <span class="visually-hidden">Кнопка лайка.</span>
+            </button>
+            <p class="card__results">96</p>
+          </li>
+          <li class="gallery__item">
+            <a class="card__link" href="#">
+              <img class="card__photo" alt="неродные просторы." src="" width="280" height="280">
+            </a>
+            <a class="card__link" href="#">
+              <h3 class="card__title">Мост дьявола</h3>
+            </a>
+            <p class="card_author">Автор фото: Антон</p>
+            <button class="card__button" type="button">
+              <span class="visually-hidden">Кнопка лайка.</span>
+            </button>
+            <p class="card__results">254</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main-page__video video">
+        <h2 class="video_title">Все еще сомневаетесь?</h2>
+        <p class="video-discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video width="280" height="177" controls poster="">
+          <source src="video/duel.ogv" type="video/ogg">
+          <source src="video/duel.mp4" type="video/mp4">
+          <source src="video/duel.webm" type="video/webm">
+        </video>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <div class="main-footer__visit visit">
+          <b class="visit__text">#visitSEDONA</b>
+        </div>
+        <div class="main-footer__social social">
+          <h2 class="social__title">Социальные сети.</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vkontakte"></a>
+              <span class="visually-hidden">ВКонтакте.</span>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--telegram"></a>
+              <span class="visually-hidden">Телеграмм.</span>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube"></a>
+              <span class="visually-hidden">Youtube.</span>
+            </li>
+          </ul>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
