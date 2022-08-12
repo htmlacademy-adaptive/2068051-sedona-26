@@ -1,13 +1,8 @@
 .main-nav {
   min-height: 56px;
   position: relative;
+  z-index: 2;
   // background-color: @blue;
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav__toggle{
-    display: none;
-  }
 }
 
 .main-nav__toggle {
@@ -75,6 +70,12 @@
 
 @media (max-width: @mobile-width-only) {
   .main-nav--closed .site-list__item {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle{
     display: none;
   }
 }

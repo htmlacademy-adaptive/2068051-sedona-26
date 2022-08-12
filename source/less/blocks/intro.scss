@@ -1,5 +1,5 @@
 .intro__logo {
-  background-image: url("/Users/olga/2068051-sedona-26/source/img/back-mobile.jpg.jpg");
+  background-image: url("/img/back-mobile.jpg.jpg");
   background-repeat: no-repeat;
   background-color: #2d1468;
   padding: 90px 19px 85px;
@@ -8,7 +8,7 @@
 
 .intro__logo::after {
   position: absolute;
-  background-image: url("/Users/olga/2068051-sedona-26/source/img/icons/intro-triangle.svg.svg");
+  background-image: url("/img/icons/intro-triangle.svg.svg");
   content: "";
   width: 320px;
   height: 57px;
@@ -25,7 +25,7 @@
 
 @media (min-width: @tablet-width) {
   .intro__logo {
-    background-image: url("/Users/olga/2068051-sedona-26/source/img/back-desktop.jpg.jpg");
+    background-image: url("/img/back-desktop.jpg.jpg");
     background-repeat: no-repeat;
   }
   .intro__logo::after {
@@ -39,12 +39,12 @@
     margin-right: 359px;
   }
   .intro__logo {
-    background-image: url("/Users/olga/2068051-sedona-26/source/img/back-desktop.jpg");
+    background-image: url("/img/back-desktop.jpg");
     background-repeat: no-repeat;
   }
   .intro__logo::after {
     width: 1200px;
-    background-image: url("/Users/olga/2068051-sedona-26/source/img/icons/intro-triangle.svg");
+    background-image: url("img/icons/intro-triangle.svg");
     content: "";
     height: 57px;
     bottom: 0;
