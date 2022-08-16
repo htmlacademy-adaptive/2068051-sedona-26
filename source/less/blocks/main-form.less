@@ -18,6 +18,7 @@
   padding-left: 16px;
   background-color: @light-grey;
   border: none;
+  box-sizing: border-box;
 }
 
 .main-form__input::placeholder {
@@ -31,4 +32,28 @@
 .main-form__button {
   margin-top: 56px;
   width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-form__oppinion,
+  .main-form__sights,
+  .main-form__emotions {
+    margin-top: 48px;
+  }
+
+  .main-form__button-wrapper {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .main-form__button {
+    margin-top: 0;
+  }
 }
