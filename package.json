@@ -7,7 +7,7 @@
     "autoprefixer": "10.4.0",
     "browser-sync": "2.27.7",
     "gulp": "4.0.2",
-    "gulp-less": "5.0.0",
+    "gulp-dart-sass": "^1.0.2",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "9.0.1",
     "postcss": "8.3.11",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
     "start": "gulp"
@@ -34,7 +34,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/sass/**/*.scss"
   ],
   "engines": {
     "node": "^16"
