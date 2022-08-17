@@ -1,0 +1,30 @@
+.hotel-search__title {
+  margin-top: 39px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.hotel-search__description {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.hotel-search__button {
+  margin-bottom: 49px;
+}
+
+@include tablet {
+  .hotel-search__description {
+    margin-left: 167px;
+    margin-right: 166px;
+  }
+}
+
+@include desktop {
+  .hotel-search__description {
+    margin-left: 383px;
+    margin-right: 383px;
+  }
+}

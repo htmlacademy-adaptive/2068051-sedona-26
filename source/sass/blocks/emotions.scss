@@ -1,0 +1,29 @@
+.emotions__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.emotions__text {
+  background-color: $inputs-color;
+  border: none;
+  width: 280px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.emotions__text::placeholder {
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@include tablet {
+  .emotions__text {
+    width: 648px;
+  }
+}

@@ -1,0 +1,26 @@
+.main-footer__visit {
+  margin-top: 49px;
+  margin-bottom: 33px;
+}
+
+.main-footer__social {
+  margin-bottom: 40px;
+}
+
+@include tablet {
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 36px 45px 36px 60px;
+  }
+
+  .main-footer__social {
+    margin-bottom: 0;
+  }
+
+  .main-footer__visit {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

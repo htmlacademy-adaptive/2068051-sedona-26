@@ -1,0 +1,19 @@
+.map {
+  margin: auto;
+}
+.map iframe {
+  border: none;
+  display: block;
+}
+
+@include tablet {
+  .map iframe {
+    width: 768px;
+  }
+}
+
+@include desktop {
+  .map iframe {
+    width: 1200px;
+  }
+}

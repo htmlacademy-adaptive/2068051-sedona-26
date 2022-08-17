@@ -1,0 +1,32 @@
+.main-header {
+  // background-color: @white;
+  // display: flex;
+  position: relative;
+}
+
+.main-header__logo {
+  margin-left: 67px;
+  margin-right: 68px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+@include tablet {
+  .main-header {
+    background-color: $additional-color-text;
+    display: flex;
+    // position: relative;
+  }
+  .main-header__logo {
+    z-index: 3;
+    // position: absolute;
+    left: 230px;
+  }
+}
+
+@minclude desktop {
+  .main-header__logo {
+    left: 450px;
+  }
+}

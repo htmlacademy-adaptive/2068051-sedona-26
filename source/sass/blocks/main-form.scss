@@ -1,0 +1,59 @@
+.main-form__title {
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.main-form__label {
+  display: block;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 16px;
+}
+
+.main-form__input {
+  width: 280px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  background-color: $inputs-color;
+  border: none;
+  box-sizing: border-box;
+}
+
+.main-form__input::placeholder {
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $basic-text;
+}
+
+.main-form__button {
+  margin-top: 56px;
+  width: 280px;
+}
+
+@incude tablet {
+  .main-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main-form__oppinion,
+  .main-form__sights,
+  .main-form__emotions {
+    margin-top: 48px;
+  }
+
+  .main-form__button-wrapper {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .main-form__button {
+    margin-top: 0;
+  }
+}

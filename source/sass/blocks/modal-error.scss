@@ -1,0 +1,24 @@
+.modal-error {
+  background-color: $additional-color-text;
+  position: relative;
+  margin: auto;
+  width: 320px;
+}
+
+.modal-error__button {
+  margin-bottom: 35px;
+}
+
+.modal-error__title {
+  margin-top: 45px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.modal-error__discription {
+  margin-right: 42px;
+  margin-left: 41px;
+  margin-bottom: 28px;
+  text-transform: uppercase;
+}
