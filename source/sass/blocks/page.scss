@@ -8,10 +8,18 @@
   color: #000000;
   text-align: center;
   margin: 0 auto;
+
   @include tablet {
     width: 768px;
   }
+
   @include desktop {
     width: 1200px;
+  }
+}
+
+.page__wrapper  {
+  @include tablet {
+    padding: 0 60px;
   }
 }

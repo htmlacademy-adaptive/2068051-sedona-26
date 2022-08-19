@@ -8,14 +8,31 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin: 0;
 }
 
 .advantages__item {
   &--city {
+    position: relative;
     background-color: $basic-back;
     color: #ffffff;
     margin: 0;
+
+    &::before {
+
+      @include mobile-width-only {
+      position: absolute;
+      background-image: url("/img/icons/triangle-index.svg");
+      content: "";
+      width: 320px;
+      height: 37px;
+      bottom: 0;
+      left: 0;
+      top: -5px;
+      }
+    }
   }
+
   &--bridge {
     background-color: $basic-back;
     color: #ffffff;
@@ -63,13 +80,27 @@
     height: 40px;
     left: -50px;
   }
+
+  @include tablet {
+    width: 33.3%;
+  }
 }
 
 .advantages__container-food-etc {
   padding: 23px 18px 52px 65px;
   list-style: none;
   text-align: left;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 0;
+    // padding-right: 31px;
+    // padding-left: 36px;
+  }
 }
+
 .advantages__title {
   text-transform: uppercase;
   font-weight: 700;
@@ -89,6 +120,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   .advantages__item {
     width: 256px;
     min-height: 256px;
@@ -107,13 +139,6 @@
   .advantages__picture {
     width: 512px;
     height: 256px;
-  }
-
-  .advantages__container-food-etc {
-    display: flex;
-    text-align: center;
-    padding-right: 31px;
-    padding-left: 36px;
   }
 
   .advantages__item--live::before {
