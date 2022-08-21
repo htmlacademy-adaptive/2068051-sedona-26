@@ -4,16 +4,13 @@
 .map iframe {
   border: none;
   display: block;
-}
 
-@include tablet {
-  .map iframe {
+  @include tablet {
     width: 768px;
   }
-}
 
-@include desktop {
-  .map iframe {
+  @include desktop {
     width: 1200px;
   }
 }
+

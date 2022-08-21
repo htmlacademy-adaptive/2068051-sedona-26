@@ -12,6 +12,10 @@
 
   &--search {
     width: 284px;
+
+    @include tablet {
+      width: 458px;
+    }
   }
 
   &--modal-error {
@@ -28,8 +32,4 @@
   }
 }
 
-@include tablet {
-  .button--search {
-    width: 458px;
-  }
-}
+

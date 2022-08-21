@@ -16,6 +16,10 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
+
+  @include tablet {
+    display: none;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -90,8 +94,3 @@
   }
 }
 
-@include tablet {
-  .main-nav__toggle{
-    display: none;
-  }
-}

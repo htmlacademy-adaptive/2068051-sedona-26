@@ -52,6 +52,21 @@
   height: 57px;
   bottom: 0;
   left: 0;
+
+  @include tablet {
+    background-image: url("/img/icons/intro-triangle-tablet.svg");
+    width: 768px;
+  }
+
+  @include desktop {
+    position: absolute;
+    width: 1200px;
+    background-image: url("/img/icons/intro-triangle.svg");
+    content: "";
+    height: 57px;
+    bottom: 0;
+    left: 0;
+    }
 }
 
 .intro__title {
@@ -59,6 +74,11 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @include desktop {
+    margin-left: 358px;
+    margin-right: 359px;
+  }
 }
 
 .intro__logo-image {
@@ -70,26 +90,3 @@
   }
 }
 
-@include tablet {
-  .intro__logo::after {
-    background-image: url("/img/icons/intro-triangle-tablet.svg");
-    width: 768px;
-  }
-}
-
-@include desktop {
-  .intro__title {
-    margin-left: 358px;
-    margin-right: 359px;
-  }
-
-  .intro__logo::after {
-    position: absolute;
-    width: 1200px;
-    background-image: url("/img/icons/intro-triangle.svg");
-    content: "";
-    height: 57px;
-    bottom: 0;
-    left: 0;
-  }
-}

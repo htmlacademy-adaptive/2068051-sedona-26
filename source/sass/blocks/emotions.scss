@@ -12,6 +12,10 @@
   width: 280px;
   padding: 20px;
   box-sizing: border-box;
+
+  @include tablet {
+    width: 648px;
+  }
 }
 
 .emotions__text::placeholder {
@@ -22,8 +26,3 @@
   color: rgba(0, 0, 0, 0.3);
 }
 
-@include tablet {
-  .emotions__text {
-    width: 648px;
-  }
-}

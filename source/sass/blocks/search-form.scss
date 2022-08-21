@@ -1,6 +1,5 @@
-
-@include tablet {
-  .search-form {
+.search-form {
+  @include tablet{
     padding-left: 60px;
     padding-right: 60px;
   }

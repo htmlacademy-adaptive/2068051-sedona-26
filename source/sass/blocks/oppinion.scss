@@ -16,13 +16,16 @@
   line-height: 26px;
 }
 
-@include tablet {
-  .oppinion__label {
+.oppinion__label {
+  @include tablet {
     width: 280px;
   }
-  .oppinion__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+}
+
+.oppinion__wrapper {
+  @include tablet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   }
 }

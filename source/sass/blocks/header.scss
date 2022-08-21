@@ -2,6 +2,11 @@
   // background-color: @white;
   // display: flex;
   position: relative;
+
+  @include tablet {
+    background-color: $additional-color-text;
+    display: flex;
+  }
 }
 
 .main-header__logo {
@@ -10,23 +15,13 @@
   position: absolute;
   z-index: 1;
   left: 0;
-}
 
-@include tablet {
-  .main-header {
-    background-color: $additional-color-text;
-    display: flex;
-    // position: relative;
-  }
-  .main-header__logo {
+  @include tablet {
     z-index: 3;
-    // position: absolute;
     left: 230px;
   }
-}
 
-@include desktop {
-  .main-header__logo {
+  @include desktop {
     left: 450px;
   }
 }

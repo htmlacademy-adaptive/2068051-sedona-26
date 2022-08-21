@@ -17,11 +17,14 @@
   line-height: 26px;
 }
 
-@include tablet {
-  .sights__label {
-    width: 280px;
+.sights__label {
+  @include tablet {
+   width: 280px;
   }
-  .sights__wrapper {
+}
+
+.sights__wrapper {
+  @include tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

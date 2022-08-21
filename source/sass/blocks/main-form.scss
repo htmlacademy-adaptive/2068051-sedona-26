@@ -1,3 +1,11 @@
+.main-form {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .main-form__title {
   font-size: 18px;
   line-height: 26px;
@@ -32,14 +40,13 @@
 .main-form__button {
   margin-top: 56px;
   width: 280px;
+
+  @include tablet {
+    margin-top: 0;
+  }
 }
 
-@incude tablet {
-  .main-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+@include tablet {
   .main-form__oppinion,
   .main-form__sights,
   .main-form__emotions {
@@ -53,7 +60,4 @@
     width: 100%;
   }
 
-  .main-form__button {
-    margin-top: 0;
-  }
 }
