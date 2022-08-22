@@ -46,6 +46,8 @@
   @include tablet {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 480px;
+    grid-auto-rows: 347px;
   }
 
   @include desktop {
@@ -53,9 +55,16 @@
   }
 }
 
-  .gallery__item:first-child {
+.gallery__item:first-child {
+  @include tablet {
+  grid-column: 1 / -1;
+  }
+}
 
-    @include tablet{
-    grid-column: 1 / -1;
+.gallery__item {
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
   }
 }

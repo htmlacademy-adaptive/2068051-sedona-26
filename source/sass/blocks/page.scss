@@ -1,5 +1,4 @@
 .page__body {
-  min-height: 100%;
   min-width: 320px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -7,6 +6,9 @@
   background-color: $additional-color-text;
   color: #000000;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   @include tablet {
     width: 768px;

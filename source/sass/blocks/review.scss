@@ -23,7 +23,10 @@
 }
 
 .review {
+  border-bottom: solid 1px #e5e5e5;
+
   @include tablet {
-  padding: 64px 166px 102px;
+    padding: 64px 166px 102px;
+    border: none;
   }
 }

@@ -7,9 +7,17 @@
 }
 
 .main-form__title {
+  font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+  padding-top: 24px;
+
+  @include tablet {
+    padding-top: 0;
+    width: 100%;
+    max-width: 402px;
+  }
 }
 
 .main-form__label {
@@ -60,4 +68,16 @@
     width: 100%;
   }
 
+}
+
+.main-form__section {
+  border: none;
+  border-bottom: solid 1px #e5e5e5;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  @include tablet  {
+    border-bottom: none;
+    border-top: solid 1px #DBDBDB;
+  }
 }

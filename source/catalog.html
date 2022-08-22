@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
+    <svg style="display: none">
+      <symbol viewBox="0 0 23 21" fill="none" id="icon-like">
+        <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" fill="black"/>
+      </symbol>
+    </svg>
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Седона.">
@@ -59,14 +64,21 @@
                 <img class="card__photo" src="img/content/photo-1-mobile.jpg" srcset="img/content/photo-1-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы.">
               </picture>
             </a>
-            <a class="card__link" href="#">
-              <h3 class="card__title">неродные просторы</h3>
-            </a>
-            <p class="card__author">Автор фото: Борис</p>
-            <button class="card__button" type="button">
-              <span class="visually-hidden">Кнопка лайка.</span>
-            </button>
-            <p class="card__results">1350</p>
+            <div class="card__info-container">
+              <a class="card__link" href="#">
+                <h3 class="card__title">неродные просторы</h3>
+              </a>
+              <p class="card__author">Автор фото: Борис</p>
+            </div>
+              <div class="card__like-container">
+                <button class="card__button" type="button">
+                  <svg class="card__button-icon" width="23" height="21">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  <span class="visually-hidden">Кнопка лайка.</span>
+                </button>
+                <p class="card__results">1350</p>
+              </div>
           </li>
           <li class="gallery__item card">
             <a class="card__link" href="#">
@@ -76,14 +88,21 @@
                 <img class="card__photo" src="img/content/photo-2-mobile.jpg" srcset="img/content/photo-2-mobile@2x.jpg" width="280" height="280" alt="Местная растительность.">
               </picture>
             </a>
-            <a class="card__link" href="#">
-              <h3 class="card__title">Местная растительность</h3>
-            </a>
-            <p class="card_author">Автор фото: Сергей</p>
-            <button class="card__button" type="button">
-              <span class="visually-hidden">Кнопка лайка.</span>
-            </button>
-            <p class="card__results">143</p>
+            <div class="card__info-container">
+              <a class="card__link" href="#">
+                <h3 class="card__title">Местная растительность</h3>
+              </a>
+              <p class="card__author">Автор фото: Сергей</p>
+              <div class="card__like-container">
+                <button class="card__button" type="button">
+                  <svg class="card__button-icon" width="23" height="21">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  <span class="visually-hidden">Кнопка лайка.</span>
+                </button>
+                <p class="card__results">143</p>
+              </div>
+            </div>
           </li>
           <li class="galery__item card">
             <a class="card__link" href="#">
@@ -93,14 +112,21 @@
                 <img class="card__photo" src="img/content/photo-3-mobile.jpg" srcset="img/content/photo-3-mobile@2x.jpg" width="280" height="280" alt="Дорога на север.">
               </picture>
             </a>
-            <a class="card__link" href="#">
-              <h3 class="card__title">Дорога на север</h3>
-            </a>
-            <p class="card_author">Автор фото: Петр</p>
-            <button class="card__button" type="button">
-              <span class="visually-hidden">Кнопка лайка.</span>
-            </button>
-            <p class="card__results">96</p>
+            <div class="card__info-container">
+              <a class="card__link" href="#">
+                <h3 class="card__title">Дорога на север</h3>
+              </a>
+              <p class="card__author">Автор фото: Петр</p>
+              <div class="card__like-container">
+                <button class="card__button" type="button">
+                  <svg class="card__button-icon" width="23" height="21">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  <span class="visually-hidden">Кнопка лайка.</span>
+                </button>
+                <p class="card__results">96</p>
+            </div>
+            </div>
           </li>
           <li class="gallery__item">
             <a class="card__link" href="#">
@@ -110,14 +136,21 @@
                 <img class="card__photo" src="img/content/photo-4-mobile.jpg" srcset="img/content/photo-4-mobile@2x.jpg" width="280" height="280" alt="Мост дьявола.">
               </picture>
             </a>
-            <a class="card__link" href="#">
-              <h3 class="card__title">Мост дьявола</h3>
-            </a>
-            <p class="card_author">Автор фото: Антон</p>
-            <button class="card__button" type="button">
-              <span class="visually-hidden">Кнопка лайка.</span>
-            </button>
-            <p class="card__results">254</p>
+            <div class="card__info-container">
+              <a class="card__link" href="#">
+                <h3 class="card__title">Мост дьявола</h3>
+              </a>
+              <p class="card__author">Автор фото: Антон</p>
+              <div class="card__like-container">
+                <button class="card__button" type="button">
+                  <svg class="card__button-icon" width="23" height="21">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                  <span class="visually-hidden">Кнопка лайка.</span>
+                </button>
+                <p class="card__results">254</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
