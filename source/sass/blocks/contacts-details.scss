@@ -10,6 +10,8 @@
   display: block;
   text-transform: uppercase;
   text-align: left;
+  padding-left: 16px;
+  margin-top: 16px;
 }
 
 .contacts-details__input {
@@ -19,6 +21,35 @@
   padding-bottom: 16px;
   padding-left: 16px;
   border: none;
+  box-sizing: border-box;
+
+  &--phone {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #E6E6E6;
+      background-image: url("../img/icons/phone-icon.svg");
+      background-repeat: no-repeat;
+      width: 58px;
+      height: 58px;
+    }
+  }
+
+  &--email {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #E6E6E6;
+      background-image: url("../img/icons/email-icon.svg");
+      background-repeat: no-repeat;
+      width: 58px;
+      height: 58px;
+    }
+  }
 }
 
 .contacts-details__input::placeholder {

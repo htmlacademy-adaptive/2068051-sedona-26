@@ -1,8 +1,19 @@
-.main-form {
+.main-form__intro-wrap {
   @include tablet {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 95%;
+      width: 1px;
+      transform: translateX(50%);
+      left: 50%;
+    }
   }
 }
 
@@ -25,6 +36,7 @@
   text-align: left;
   text-transform: uppercase;
   margin-top: 16px;
+  padding-left: 16px;
 }
 
 .main-form__input {
@@ -73,11 +85,11 @@
 .main-form__section {
   border: none;
   border-bottom: solid 1px #e5e5e5;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 24px 20px;
 
   @include tablet  {
     border-bottom: none;
     border-top: solid 1px #DBDBDB;
+    padding: 0;
   }
 }

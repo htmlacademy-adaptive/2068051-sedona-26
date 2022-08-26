@@ -17,15 +17,14 @@
 }
 
 .sights__label {
+  width: 100%;
+
   @include tablet {
    width: 280px;
   }
 }
 
 .sights__wrapper {
-  @include tablet {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-  }
 }

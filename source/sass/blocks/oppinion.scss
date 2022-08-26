@@ -15,15 +15,38 @@
 }
 
 .oppinion__label {
+  width: 100%;
+  margin-top: 36px;
+  position: relative;
+
   @include tablet {
     width: 280px;
   }
 }
 
 .oppinion__wrapper {
-  @include tablet {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  }
+}
+
+.oppinion__radio {
+  position: absolute;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: $inputs-color;
+  border-radius: 50%;
+  left: -16px;
+  top: -10px;
+}
+
+.oppinion__input:checked + .oppinion__radio::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: $secondary-text;
+  border-radius: 50%;
+  content: "";
 }
