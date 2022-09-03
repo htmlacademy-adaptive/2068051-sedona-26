@@ -65,10 +65,14 @@
             </fieldset>
             <fieldset class="main-form__contacts contacts-details main-form__section" >
               <legend class="main-form__title">Контактная информация:</legend>
-              <label for="contacts-details__input" class="contacts-details__label">Контактный телефон*:</label>
-              <input class="contacts-details__input contacts-details__input--phone input" type="number" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
-              <label for="contacts-details__input" class="contacts-details__label">Контактный телефон*:</label>
-              <input class="contacts-details__input contacts-details__input--email input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
+              <label for="contacts-details__input" class="contacts-details__label contacts-details__label--phone">
+                <span class="contact-details__text">Контактный телефон*:</span>
+                <input class="contacts-details__input input" type="number" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
+              </label>
+              <label for="contacts-details__input" class="contacts-details__label contacts-details__label--email">
+                <span class="contact-details__text">электронная почта*:</span>
+                <input class="contacts-details__input input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
+              </label>
             </fieldset>
           </div>
           <fieldset class="main-form__oppinion oppinion main-form__section">

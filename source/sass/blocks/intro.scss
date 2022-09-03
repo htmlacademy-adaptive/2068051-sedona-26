@@ -15,32 +15,22 @@
   padding: 90px 19px 85px;
   position: relative;
 
-  // @media (min-resolution: 2dppx) {
-  //   background-image: url("/img/back-mobile@2x.jpg");
-  // }
-
   @include tablet {
     order: 2;
-    height: 290px;
-    background-image: url("/img/back-tablet.jpg");
-    padding: 0;
-
-    // @media (min-resolution: 2dppx) {
-    //   background-image: url("/img/back-tablet@2x.jpg");
-    //   background-size: 1200px auto;
-    // }
-  }
-
-  @include desktop {
     background-image: url("/img/back-desktop.jpg");
-    height: 301px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/back-desktop@2x.jpg");
-      background-size: 1200px auto;
-      background-position: 0 -55px;
     }
   }
+
+  // @include desktop {
+  //   background-image: url("/img/back-desktop.jpg");
+
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("/img/back-desktop@2x.jpg");
+  //   }
+  // }
 }
 
 
@@ -54,14 +44,6 @@
   height: 57px;
   bottom: 0;
   left: 0;
-
-  // @include tablet {
-  //   width: 768px;
-  // }
-
-  // @include desktop {
-  //   width: 1200px;
-  //   }
 }
 
 .intro__title {
@@ -78,10 +60,10 @@
 
 .intro__logo-image {
   @include tablet {
-    width: 457px;
-    height: 77px;
-    padding-top: 95px;
-    padding-bottom: 117px;
+    width: 461px;
+    height: 350px;
+    margin-top: 77px;
+    margin-bottom: 91px;
   }
 }
 

@@ -12,6 +12,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  margin-left: 36px;
 }
 
 .oppinion__label {
@@ -27,6 +28,7 @@
 .oppinion__wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding: 24px 20px;
 }
 
 .oppinion__radio {
@@ -38,6 +40,7 @@
   border-radius: 50%;
   left: -16px;
   top: -10px;
+  margin-right: 16px;
 }
 
 .oppinion__input:checked + .oppinion__radio::before {
@@ -49,4 +52,5 @@
   background-color: $secondary-text;
   border-radius: 50%;
   content: "";
+  transition: width 0.3s, height 0.3s;
 }

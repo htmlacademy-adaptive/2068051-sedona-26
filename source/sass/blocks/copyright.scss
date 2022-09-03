@@ -1,4 +1,22 @@
 .copyright {
+
+}
+
+.copyright__text {
+  text-transform: uppercase;
+}
+
+.copyright__link {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  color: $basic-text;
+
+  &:hover {
+    color: $basic-back;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }

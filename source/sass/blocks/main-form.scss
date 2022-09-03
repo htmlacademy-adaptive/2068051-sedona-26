@@ -45,8 +45,18 @@
   padding-bottom: 16px;
   padding-left: 16px;
   background-color: $inputs-color;
-  border: none;
+  border: 4px solid $inputs-color;
   box-sizing: border-box;
+
+  &:hover {
+    border-color: #e5e5e5;
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: $additional-color-text;
+    outline: none;
+  }
 }
 
 .main-form__input::placeholder {
@@ -72,14 +82,19 @@
   .main-form__emotions {
     margin-top: 48px;
   }
+}
 
-  .main-form__button-wrapper {
+.main-form__button-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
     margin-top: 48px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
   }
-
 }
 
 .main-form__section {
@@ -92,4 +107,11 @@
     border-top: solid 1px #DBDBDB;
     padding: 0;
   }
+}
+
+.main-form__rule {
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+  margin-top: 0;
+  text-align: right;
 }
