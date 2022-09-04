@@ -18,6 +18,7 @@
   @include tablet {
     order: 2;
     background-image: url("/img/back-desktop.jpg");
+    padding: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/back-desktop@2x.jpg");
