@@ -1,0 +1,55 @@
+.sights {
+  list-style-type: none;
+  margin: 0;
+}
+
+.sights__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.sights__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: left;
+}
+
+.sights__label {
+  width: 100%;
+  margin-top: 36px;
+  position: relative;
+
+  @include tablet {
+   width: 280px;
+  }
+}
+
+.sights__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 24px 20px;
+}
+
+.sights__checkbox {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: $inputs-color;
+  border-radius: 4px;
+  left: -16px;
+  top: -10px;
+}
+
+.sights__input:checked + .sights__checkbox::before {
+  position: absolute;
+  top: 15px;
+  left: 13px;
+  width: 22px;
+  height: 16px;
+  background-image: url("../img/icons/arrow.svg");
+  content: "";
+}

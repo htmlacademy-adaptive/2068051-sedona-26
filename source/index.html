@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -44,10 +45,12 @@
     <main class="main-container">
       <section class="intro">
         <div class="intro__logo">
-          <img class="intro__logo-image" alt="Логотип Welcome Sedona." src="img/text-index.svg"  width="282" height="214">
+          <img class="intro__logo-image" alt="Логотип Welcome Sedona." src="img/text-index.svg">
         </div>
-        <h1 class="intro__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
-        <p class="intro__advatages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div  class="intro__wrapper">
+          <h1 class="intro__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
+          <p class="intro__advatages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества.</h2>
@@ -105,13 +108,6 @@
       </section>
       <section class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380555.9499970315!2d-111.9532317173502!3d34.913374820791525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660390178897!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта города Седона в штате Аризона."></iframe>
-        <!-- <iframe
-        src="https://goo.gl/maps/xCbpKbRetXP63fJq6"
-        width="320"
-        height="350"
-        allowfullscreen
-        title="Карта города Седона в штате Аризона.">
-      </iframe> -->
       </section>
     </main>
     <footer class="main-footer">
@@ -143,8 +139,12 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+            <span class="copyright__text">Разработано:</span>
+            <svg class="copyright__link-icon" width="36" height="36" fill="currentcolor">
+              <use xlink:href="img/sprite.svg#copyright-icon"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>

@@ -53,24 +53,30 @@
       </section>
       <section class="search-form">
         <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div>
-            <h2 class="main-form__title">Представьтесь:</h2>
-            <label for="name" class="main-form__label">ИМЯ*:</label>
-            <input class="main-form__input input" type="text" id="name" name="name" placeholder="Пётр" required>
-            <label for="surname" class="main-form__label">ФАМИЛИЯ*:</label>
-            <input class="main-form__input input" type="text" id="surname" name="surname" placeholder="" required>
-            <label for="patronymic" class="main-form__label">Отчество:</label>
-            <input class="main-form__input input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+          <div class="main-form__intro-wrap">
+            <fieldset class="main-form__section">
+              <legend class="main-form__title">Представьтесь:</legend>
+              <label for="name" class="main-form__label">ИМЯ*:</label>
+              <input class="main-form__input input" type="text" id="name" name="name" placeholder="Пётр" required>
+              <label for="surname" class="main-form__label">ФАМИЛИЯ*:</label>
+              <input class="main-form__input input" type="text" id="surname" name="surname" placeholder="" required>
+              <label for="patronymic" class="main-form__label">Отчество:</label>
+              <input class="main-form__input input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
+            </fieldset>
+            <fieldset class="main-form__contacts contacts-details main-form__section" >
+              <legend class="main-form__title">Контактная информация:</legend>
+              <label for="contacts-details__input" class="contacts-details__label contacts-details__label--phone">
+                <span class="contact-details__text">Контактный телефон*:</span>
+                <input class="contacts-details__input input" type="number" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
+              </label>
+              <label for="contacts-details__input" class="contacts-details__label contacts-details__label--email">
+                <span class="contact-details__text">электронная почта*:</span>
+                <input class="contacts-details__input input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
+              </label>
+            </fieldset>
           </div>
-          <div class="main-form__contacts contacts-details">
-            <h2 class="contacts-details__title">Контактная информация:</h2>
-            <label for="contacts-details__input" class="contacts-details__label">Контактный телефон*:</label>
-            <input class="contacts-details__input contacts-details__input--phone input" type="number" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
-            <label for="contacts-details__input" class="contacts-details__label">Контактный телефон*:</label>
-            <input class="contacts-details__input contacts-details__input--email input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
-          </div>
-          <fieldset class="main-form__oppinion oppinion">
-            <legend class="oppinion__title">ВАше Общее впечатление:</legend>
+          <fieldset class="main-form__oppinion oppinion main-form__section">
+            <legend class="main-form__title">ВАше Общее впечатление:</legend>
             <div class="oppinion__wrapper">
               <label class="oppinion__label">
                 <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="good" checked>
@@ -89,8 +95,8 @@
               </label>
             </div>
           </fieldset>
-          <fieldset class="main-form__sights sights">
-            <legend class="sights__title">посещенные достопримечательности:</legend>
+          <fieldset class="main-form__sights sights main-form__section">
+            <legend class="main-form__title">посещенные <br> достопримечательности:</legend>
             <div class="sights__wrapper">
               <label class="sights__label">
                 <input class="sights__input visually-hidden" type="checkbox" name="bridge" checked>

@@ -1,0 +1,27 @@
+.page__body {
+  min-width: 320px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: $additional-color-text;
+  color: #000000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 1200px;
+  }
+}
+
+.page__wrapper  {
+  @include tablet {
+    padding: 0 60px;
+  }
+}

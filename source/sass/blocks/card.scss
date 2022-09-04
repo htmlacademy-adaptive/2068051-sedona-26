@@ -1,0 +1,35 @@
+.card__photo {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+
+.card__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card__author {
+  color: $secondary-text;
+  margin: 0;
+}
+
+.card__info-container {
+  @include tablet {
+    background-color: $inputs-color;
+  }
+}
+
+.card__button {
+  display: block;
+  border: none;
+}
+
+.card__like-container {
+  display: flex;
+}

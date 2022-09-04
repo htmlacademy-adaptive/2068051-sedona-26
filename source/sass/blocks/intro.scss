@@ -1,0 +1,69 @@
+.intro__wrapper {
+  padding: 32px 20px;
+  position: relative;
+}
+
+.intro__advatages-text {
+  text-transform: uppercase;
+}
+
+.intro__logo {
+  background-image: url("/img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #2d1468;
+  padding: 90px 19px 85px;
+  position: relative;
+
+  @include tablet {
+    order: 2;
+    background-image: url("/img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/back-desktop@2x.jpg");
+    }
+  }
+
+  // @include desktop {
+  //   background-image: url("/img/back-desktop.jpg");
+
+  //   @media (min-resolution: 2dppx) {
+  //     background-image: url("/img/back-desktop@2x.jpg");
+  //   }
+  // }
+}
+
+
+.intro__logo::after {
+  position: absolute;
+  background-image: url("/img/icons/intro-triangle.svg");
+  content: "";
+  background-position: center bottom;
+  background-size: cover;
+  width: 100%;
+  height: 57px;
+  bottom: 0;
+  left: 0;
+}
+
+.intro__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @include desktop {
+    margin-left: 358px;
+    margin-right: 359px;
+  }
+}
+
+.intro__logo-image {
+  @include tablet {
+    width: 461px;
+    height: 350px;
+    margin-top: 77px;
+    margin-bottom: 91px;
+  }
+}
+

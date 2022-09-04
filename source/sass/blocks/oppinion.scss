@@ -1,0 +1,56 @@
+
+
+.oppinion__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.oppinion__text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: 36px;
+}
+
+.oppinion__label {
+  width: 100%;
+  margin-top: 36px;
+  position: relative;
+
+  @include tablet {
+    width: 280px;
+  }
+}
+
+.oppinion__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 24px 20px;
+}
+
+.oppinion__radio {
+  position: absolute;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: $inputs-color;
+  border-radius: 50%;
+  left: -16px;
+  top: -10px;
+  margin-right: 16px;
+}
+
+.oppinion__input:checked + .oppinion__radio::before {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 16px;
+  height: 16px;
+  background-color: $secondary-text;
+  border-radius: 50%;
+  content: "";
+  transition: width 0.3s, height 0.3s;
+}
