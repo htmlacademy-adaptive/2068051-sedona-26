@@ -9,9 +9,26 @@
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .advantages__item {
+  padding: 24px 41px;
+
+  @include tablet {
+    width: 33.3%;
+    padding: 32px;
+    width: 256px;
+    min-height: 256px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
   &--city {
     position: relative;
     background-color: $basic-back;
@@ -19,7 +36,6 @@
     margin: 0;
 
     &::before {
-
       @include mobile-width-only {
       position: absolute;
       background-image: url("/img/icons/triangle-index.svg");
@@ -37,21 +53,32 @@
     background-color: $basic-back;
     color: #ffffff;
     margin: 0;
+    @include tablet {
+      flex-direction: row-reverse;
+    }
   }
+
   &--places {
     background-color: $seconadary-back;
   }
+
   &--order::before {
     display: block;
     counter-increment: advantage;
     content: "— №" counter(advantage) " —";
     order: 2;
   }
+
   &--live,
   &--food,
   &--gift {
     position: relative;
+
+    @include tablet {
+      padding-top: 158px;
+    }
   }
+
   &--live::before {
     content: "";
     position: absolute;
@@ -60,6 +87,14 @@
     width: 40px;
     height: 40px;
     left: -50px;
+
+    @include tablet {
+      width: 75px;
+      height: 72px;
+      background-size: cover;
+      left: 35%;
+      top: 20%;
+    }
   }
 
   &--food::before {
@@ -70,6 +105,14 @@
     width: 40px;
     height: 40px;
     left: -50px;
+
+    @include tablet {
+      width: 76px;
+      height: 68px;
+      background-size: cover;
+      left: 35%;
+      top: 20%;
+    }
   }
   &--gift::before {
     content: "";
@@ -79,10 +122,14 @@
     width: 40px;
     height: 40px;
     left: -50px;
-  }
 
-  @include tablet {
-    width: 33.3%;
+    @include tablet {
+      width: 64px;
+      height: 75px;
+      background-size: cover;
+      left: 35%;
+      top: 20%;
+    }
   }
 }
 
@@ -96,6 +143,7 @@
     flex-wrap: wrap;
     text-align: center;
     padding: 0;
+    height: 330px;
     // padding-right: 31px;
     // padding-left: 36px;
   }
@@ -113,39 +161,26 @@
   // font-weight: 700;
   text-transform: uppercase;
   order: 2;
+  margin: 0;
+}
+
+.advantages__picture {
+  @include tablet {
+    width: 512px;
+    height: 256px;
+  }
+
+  @include desktop {
+    width: 800px;
+  }
 }
 
 @include tablet {
-  .advantages__list {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .advantages__item {
-    width: 256px;
-    min-height: 256px;
-    padding-top: 42px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-  }
 
   .advantages__item--city,
   .advantages__item--bridge {
     display: flex;
     width: 768px;
-  }
-
-  .advantages__picture {
-    width: 512px;
-    height: 256px;
-  }
-
-  .advantages__item--live::before {
-    width: 75px;
-    height: 75px;
-    left: 41%;
-    top: 21%;
   }
 }
 
