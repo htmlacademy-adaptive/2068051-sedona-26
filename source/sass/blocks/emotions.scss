@@ -16,6 +16,10 @@
   @include tablet {
     width: 648px;
   }
+
+  @include desktop {
+    width: 768px;
+  }
 }
 
 .emotions__text::placeholder {

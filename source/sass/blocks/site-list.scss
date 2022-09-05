@@ -56,6 +56,12 @@
     padding: 18px 0 17px;
     text-align: center;
   }
+
+  &--current {
+    @include tablet {
+      color: #766357;
+    }
+  }
 }
 
 @include mobile-width-only {

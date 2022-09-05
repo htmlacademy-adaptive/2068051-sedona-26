@@ -25,6 +25,9 @@
 
   @include tablet {
    width: 280px;
+   text-align: left;
+   padding-left: 52px;
+   box-sizing: border-box;
   }
 }
 

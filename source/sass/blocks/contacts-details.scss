@@ -1,3 +1,4 @@
+
 .contacts-details__title {
   text-transform: uppercase;
   font-size: 18px;
@@ -12,6 +13,9 @@
   text-align: left;
   padding-left: 16px;
   margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
 
   &--phone {
     position: relative;
@@ -48,6 +52,11 @@
       height: 58px;
     }
   }
+
+  @include desktop {
+    width: 400px;
+    padding-left: 0;
+  }
 }
 
 .contacts-details__input {
@@ -68,6 +77,10 @@
   &:focus {
     background-color: $additional-color-text;
     outline: none;
+  }
+
+  @include desktop {
+    width: 400px;
   }
 }
 

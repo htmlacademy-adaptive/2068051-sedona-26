@@ -31,8 +31,8 @@
                 Главная
               </a>
             </li>
-            <li class="site-list__item site-list__item--curent">
-              <a class="site-list__link">
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--current">
                 Фото и видео
               </a>
             </li>
@@ -63,45 +63,49 @@
           <li class="gallery__item card">
             <a class="card__link" href="#">
               <picture>
-                <source type="image/webp" srcset="img/content/photo-1-mobile.webp 1x, img/content/photo-1-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1-desktop@2x.jpg 2x" width="1200" height="400">
-                <source media="(min-width: 768px)" srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x" width="648" height="400">
-                <img class="card__photo" src="img/content/photo-1-mobile.jpg" srcset="img/content/photo-1-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы.">
+                <!-- <source type="image/webp" srcset="img/content/photo-1-mobile.webp 1x, img/content/photo-1-mobile@2x.webp 2x"> -->
+                <source media="(min-width: 1200px)" srcset="img/content/photo-1-desktop.jpg 1x, img/content/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/photo-1-tablet.jpg 1x, img/content/photo-1-tablet@2x.jpg 2x">
+                <img class="card__photo card__photo--main" src="img/content/photo-1-mobile.jpg" srcset="img/content/photo-1-mobile@2x.jpg" width="280" height="280" alt="Неродные просторы.">
               </picture>
             </a>
             <div class="card__info-container">
-              <a class="card__link" href="#">
-                <h3 class="card__title">неродные просторы</h3>
-              </a>
-              <p class="card__author">Автор фото: Борис</p>
-            </div>
+              <div class="card__title-container">
+                <a class="card__link" href="#">
+                  <h3 class="card__title">неродные просторы</h3>
+                </a>
+                <p class="card__author">Автор фото: Борис</p>
+              </div>
               <div class="card__like-container">
                 <button class="card__button" type="button">
-                  <svg class="card__button-icon" width="23" height="21">
+                  <svg class="card__button-icon" width="23" height="21" fill="none">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
                   <span class="visually-hidden">Кнопка лайка.</span>
                 </button>
                 <p class="card__results">1350</p>
               </div>
+            </div>
           </li>
           <li class="gallery__item card">
             <a class="card__link" href="#">
               <picture>
-                <source type="image/webp" srcset="img/content/photo-2-mobile.webp 1x, img/content/photo-2-mobile@2x.webp 2x" width="280" height="280" >
-                <source media="(min-width: 1200px)" srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x" width="400" height="267">
-                <source media="(min-width: 768px)" srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x" width="324" height="267">
+                <source type="image/webp" srcset="img/content/photo-2-mobile.webp 1x, img/content/photo-2-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/content/photo-2-desktop.jpg 1x, img/content/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/photo-2-tablet.jpg 1x, img/content/photo-2-tablet@2x.jpg 2x">
                 <img class="card__photo" src="img/content/photo-2-mobile.jpg" srcset="img/content/photo-2-mobile@2x.jpg" width="280" height="280" alt="Местная растительность.">
               </picture>
             </a>
             <div class="card__info-container">
-              <a class="card__link" href="#">
-                <h3 class="card__title">Местная растительность</h3>
-              </a>
-              <p class="card__author">Автор фото: Сергей</p>
+              <div class="card__title-container">
+                <a class="card__link" href="#">
+                  <h3 class="card__title">Местная растительность</h3>
+                </a>
+                <p class="card__author">Автор фото: Сергей</p>
+              </div>
               <div class="card__like-container">
                 <button class="card__button" type="button">
-                  <svg class="card__button-icon" width="23" height="21">
+                  <svg class="card__button-icon" width="23" height="21" fill="currentcolor">
                     <use xlink:href="img/sprite.svg#icon-like"></use>
                   </svg>
                   <span class="visually-hidden">Кнопка лайка.</span>
@@ -110,19 +114,21 @@
               </div>
             </div>
           </li>
-          <li class="galery__item card">
+          <li class="gallery__item card">
             <a class="card__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x" width="400" height="267">
-                <source media="(min-width: 768px)" srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3-tablet@2x.jpg 2x" width="324" height="267">
+                <source media="(min-width: 1200px)" srcset="img/content/photo-3-desktop.jpg 1x, img/content/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/photo-3-tablet.jpg 1x, img/content/photo-3-tablet@2x.jpg 2x">
                 <img class="card__photo" src="img/content/photo-3-mobile.jpg" srcset="img/content/photo-3-mobile@2x.jpg" width="280" height="280" alt="Дорога на север.">
               </picture>
             </a>
             <div class="card__info-container">
-              <a class="card__link" href="#">
-                <h3 class="card__title">Дорога на север</h3>
-              </a>
-              <p class="card__author">Автор фото: Петр</p>
+              <div class="card__title-container">
+                <a class="card__link" href="#">
+                  <h3 class="card__title">Дорога на север</h3>
+                </a>
+                <p class="card__author">Автор фото: Петр</p>
+              </div>
               <div class="card__like-container">
                 <button class="card__button" type="button">
                   <svg class="card__button-icon" width="23" height="21">
@@ -134,19 +140,21 @@
             </div>
             </div>
           </li>
-          <li class="gallery__item">
+          <li class="gallery__item card">
             <a class="card__link" href="#">
               <picture>
-                <source media="(min-width: 1200px)" srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4-desktop@2x.jpg 2x" width="400" height="267">
-                <source media="(min-width: 768px)" srcset="img/content/photo-4-tablet.jpg 1x, img/content/photo-4-tablet@2x.jpg 2x" width="324" height="267">
+                <source media="(min-width: 1200px)" srcset="img/content/photo-4-desktop.jpg 1x, img/content/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/content/photo-4-tablet.jpg 1x, img/content/photo-4-tablet@2x.jpg 2x">
                 <img class="card__photo" src="img/content/photo-4-mobile.jpg" srcset="img/content/photo-4-mobile@2x.jpg" width="280" height="280" alt="Мост дьявола.">
               </picture>
             </a>
             <div class="card__info-container">
-              <a class="card__link" href="#">
-                <h3 class="card__title">Мост дьявола</h3>
-              </a>
-              <p class="card__author">Автор фото: Антон</p>
+              <div class="card__title-container">
+                <a class="card__link" href="#">
+                  <h3 class="card__title">Мост дьявола</h3>
+                </a>
+                <p class="card__author">Автор фото: Антон</p>
+              </div>
               <div class="card__like-container">
                 <button class="card__button" type="button">
                   <svg class="card__button-icon" width="23" height="21">
