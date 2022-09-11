@@ -1,6 +1,19 @@
+.card {
+  @include mobile-width-only {
+    padding: 24px 20px;
+    border-bottom: 1px solid $decoration-color;
+  }
+}
 .card__photo {
   width: 100%;
   object-fit: cover;
+
+  @include tablet {
+    height: 267px;
+    &--main {
+      height: 400px;
+    }
+  }
 }
 
 .card__title {
@@ -17,19 +30,47 @@
 .card__author {
   color: $secondary-text;
   margin: 0;
+  @include desktop {
+    color: $additional-color-text;
+  }
 }
 
 .card__info-container {
   @include tablet {
     background-color: $inputs-color;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 20px 15px 20px;
+  }
+
+  @include desktop {
+    background-color: rgba($basic-text, 0.3);
+    margin-top: -92px;
+    color: $additional-color-text;
   }
 }
 
 .card__button {
   display: block;
   border: none;
+  background-color: transparent;
+}
+
+.card__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .card__like-container {
   display: flex;
+  // background-color: $inputs-color;
+}
+
+.card__button-icon {
+  fill: rgba($basic-text, 0.3);
+
+  @include desktop {
+    fill: $additional-color-text;
+  }
 }
