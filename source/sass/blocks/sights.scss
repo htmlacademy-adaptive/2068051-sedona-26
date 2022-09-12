@@ -53,6 +53,18 @@
   left: 13px;
   width: 22px;
   height: 16px;
-  background-image: url("../img/icons/arrow.svg");
+  color: rgb(119, 41, 28);
+  background-image: url("../img/arrow.svg");
   content: "";
+}
+
+input[type="checkbox"]:active + .sights__checkbox::before {
+  opacity: 20%;
+}
+
+.sights__label:hover .sights__checkbox {
+  background-color: $decoration-color;
+}
+.sights__label:active .sights__checkbox {
+  background-color: #d5d5d5;
 }

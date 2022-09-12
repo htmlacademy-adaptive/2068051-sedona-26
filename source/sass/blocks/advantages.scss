@@ -38,7 +38,7 @@
     &::before {
       @include mobile-width-only {
       position: absolute;
-      background-image: url("/img/icons/triangle-index.svg");
+      background-image: url("/img/triangle-index.svg");
       content: "";
       width: 320px;
       height: 37px;
@@ -82,7 +82,7 @@
   &--live::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icons/icon-house.svg");
+    background-image: url("../img/icon-house.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -100,7 +100,7 @@
   &--food::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icons/icon-burger.svg");
+    background-image: url("../img/icon-burger.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
@@ -117,7 +117,7 @@
   &--gift::before {
     content: "";
     position: absolute;
-    background-image: url("../img/icons/icon-gift.svg");
+    background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
     width: 40px;
     height: 40px;
