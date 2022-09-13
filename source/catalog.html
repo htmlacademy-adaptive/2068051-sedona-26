@@ -58,7 +58,7 @@
       </section>
       <section class="gallery page__wrapper">
         <h1 class="gallery__title">Фото и видео</h1>
-        <p class="gallery__discription">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <p class="gallery__discription">Не можете решиться на путешествие <br> из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         <ul class="gallery__list">
           <li class="gallery__item card">
             <a class="card__link" href="#">
@@ -79,7 +79,7 @@
               <div class="card__like-container">
                 <button class="card__button" type="button">
                   <svg class="card__button-icon" width="23" height="21" fill="none">
-                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="visually-hidden">Кнопка лайка.</span>
                 </button>
@@ -106,7 +106,7 @@
               <div class="card__like-container">
                 <button class="card__button" type="button">
                   <svg class="card__button-icon" width="23" height="21" fill="currentcolor">
-                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="visually-hidden">Кнопка лайка.</span>
                 </button>
@@ -132,7 +132,7 @@
               <div class="card__like-container">
                 <button class="card__button" type="button">
                   <svg class="card__button-icon" width="23" height="21">
-                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="visually-hidden">Кнопка лайка.</span>
                 </button>
@@ -158,7 +158,7 @@
               <div class="card__like-container">
                 <button class="card__button" type="button">
                   <svg class="card__button-icon" width="23" height="21">
-                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                    <use xlink:href="img/sprite.svg#like-icon"></use>
                   </svg>
                   <span class="visually-hidden">Кнопка лайка.</span>
                 </button>
@@ -168,10 +168,10 @@
           </li>
         </ul>
       </section>
-      <section class="main-page__video video page__wrapper">
-        <h2 class="video_title">Все еще сомневаетесь?</h2>
-        <p class="video-discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        <video width="280" height="177" controls poster="">
+      <section class="main-page__video video page__wrapper-video">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__discription">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <video class="video__frame"width="280" height="177" controls poster="img/video.jpg">
           <source src="video/duel.ogv" type="video/ogg">
           <source src="video/duel.mp4" type="video/mp4">
           <source src="video/duel.webm" type="video/webm">
@@ -189,15 +189,15 @@
             <li class="social__item">
               <a class="social__link social__link--vkontakte">
                 <svg width="48" height="48" fill="none">
-                  <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
+                  <use xlink:href="img/sprite.svg#vk-icon"></use>
                 </svg>
               </a>
               <span class="visually-hidden">ВКонтакте.</span>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram">
-                <svg width="48" height="48">
-                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                <svg width="48" height="48" fill="none">
+                  <use xlink:href="img/sprite.svg#teleg-icon"></use>
                 </svg>
               </a>
               <span class="visually-hidden">Телеграмм.</span>
@@ -205,7 +205,7 @@
             <li class="social__item">
               <a class="social__link social__link--youtube">
                 <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
-                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                  <use xlink:href="img/sprite.svg#youtube-icon"></use>
                 </svg>
               </a>
               <span class="visually-hidden">Youtube.</span>
@@ -216,7 +216,7 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
             <span class="copyright__text">Разработано:</span>
             <svg class="copyright__link-icon" width="36" height="36" fill="currentcolor">
-              <use xlink:href="img/sprite.svg#copyright-icon"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>

@@ -19,6 +19,10 @@
 .advantages__item {
   padding: 24px 41px;
 
+  @include mobile-width-only {
+    width: 100%;
+  }
+
   @include tablet {
     width: 33.3%;
     padding: 32px;
@@ -53,6 +57,7 @@
     background-color: $basic-back;
     color: #ffffff;
     margin: 0;
+
     @include tablet {
       flex-direction: row-reverse;
     }
@@ -165,6 +170,7 @@
 }
 
 .advantages__picture {
+  display: block;
   @include tablet {
     width: 512px;
     height: 256px;

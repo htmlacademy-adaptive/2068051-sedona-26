@@ -40,12 +40,14 @@ const html = () =>  {
     .pipe(gulp.dest('build/img'));
  }
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
-    .pipe(svgstore({inLineSvg: true}))
+    .pipe(svgstore({
+    inlineSvg: true
+     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img'));
 }
 
 // // images

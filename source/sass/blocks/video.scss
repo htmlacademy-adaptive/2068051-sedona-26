@@ -1,11 +1,36 @@
-.video_title {
+.video__title {
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
 
-.video-discription {
+.video__discription {
   text-transform: uppercase;
   color: $secondary-text;
+  margin: 30px 5px 38px;
+
+  @include tablet {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-bottom: 85px;
+  }
+
+  @include desktop {
+    padding-left: 177px;
+    padding-right: 177px;
+  }
+}
+
+.video__frame {
+  @include tablet {
+  width: 648px;
+  height: 500px;
+  }
 }

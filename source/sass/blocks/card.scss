@@ -1,7 +1,13 @@
 .card {
   @include mobile-width-only {
-    padding: 24px 20px;
+    padding: 23px 20px 23px;
     border-bottom: 1px solid $decoration-color;
+  }
+
+  &:first-child {
+    @include mobile-width-only {
+      border-top: 1px solid $decoration-color;
+    }
   }
 }
 .card__photo {
@@ -9,6 +15,7 @@
   object-fit: cover;
 
   @include tablet {
+    display: block;
     height: 267px;
     &--main {
       height: 400px;
@@ -20,6 +27,13 @@
   text-transform: uppercase;
   font-weight: 700;
   margin: 0;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 10px;
+
+  @include tablet {
+    padding-top: 0;
+  }
 }
 
 .card__link {
@@ -44,9 +58,12 @@
   }
 
   @include desktop {
+    position: absolute;
     background-color: rgba($basic-text, 0.3);
-    margin-top: -92px;
     color: $additional-color-text;
+    bottom: 80px;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
@@ -54,6 +71,7 @@
   display: block;
   border: none;
   background-color: transparent;
+  margin-right: 5px;
 }
 
 .card__title-container {
@@ -64,7 +82,12 @@
 
 .card__like-container {
   display: flex;
-  // background-color: $inputs-color;
+  padding-top: 15px;
+  align-items: center;
+
+  @include tablet {
+    padding-top: 0;
+  }
 }
 
 .card__button-icon {
@@ -73,4 +96,9 @@
   @include desktop {
     fill: $additional-color-text;
   }
+}
+
+.card__results {
+  margin: 0;
+  font-weight: 700;
 }

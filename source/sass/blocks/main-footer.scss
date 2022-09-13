@@ -9,7 +9,8 @@
 }
 
 .main-footer__social {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
+  margin-top: 16px;
 
   @include tablet {
     margin-bottom: 0;
@@ -25,6 +26,6 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 36px 45px 36px 60px;
+    padding: 60px 45px 36px 60px;
   }
 }

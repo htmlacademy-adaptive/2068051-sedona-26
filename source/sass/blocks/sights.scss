@@ -58,7 +58,7 @@
   content: "";
 }
 
-input[type="checkbox"]:active + .sights__checkbox::before {
+.sights__label:active  .sights__checkbox::before {
   opacity: 20%;
 }
 
