@@ -5,20 +5,30 @@
   line-height: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 21px;
+    margin-left: -20px;
+  }
 }
 
 .contacts-details__label {
   display: block;
   text-transform: uppercase;
-  text-align: left;
-  padding-left: 16px;
   margin-top: 16px;
   display: flex;
   flex-direction: column;
   width: 280px;
+  margin-top: -3px;
+  text-align: left;
+  margin-bottom: 15px;
 
   &--phone {
     position: relative;
+
+    @include tablet {
+      margin-top: 9px;
+    }
 
     &::after {
       position: absolute;
@@ -37,6 +47,10 @@
 
   &--email {
     position: relative;
+
+    @include tablet {
+      margin-top: 3px;
+    }
 
     &::after {
       position: absolute;

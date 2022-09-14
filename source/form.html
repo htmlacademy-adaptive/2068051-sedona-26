@@ -53,7 +53,7 @@
       </section>
       <section class="review">
         <h1 class="review__title">Оставьте свой отзыв</h1>
-        <p class="review__discription">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <p class="review__discription">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="search-form">
         <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -68,7 +68,7 @@
               <input class="main-form__input input" type="text" id="patronymic" name="patronymic" placeholder="Викторович">
             </fieldset>
             <fieldset class="main-form__contacts contacts-details main-form__section" >
-              <legend class="main-form__title">Контактная информация:</legend>
+              <legend class="main-form__title contacts-details__title">Контактная информация:</legend>
               <label for="contacts-details__input" class="contacts-details__label contacts-details__label--phone">
                 <span class="contact-details__text">Контактный телефон*:</span>
                 <input class="contacts-details__input input" type="number" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
@@ -80,7 +80,7 @@
             </fieldset>
           </div>
           <fieldset class="main-form__oppinion oppinion main-form__section">
-            <legend class="main-form__title">ВАше Общее впечатление:</legend>
+            <legend class="main-form__title oppinion__title">ВАше Общее впечатление:</legend>
             <div class="oppinion__wrapper">
               <label class="oppinion__label">
                 <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="good" checked>
@@ -100,7 +100,7 @@
             </div>
           </fieldset>
           <fieldset class="main-form__sights sights main-form__section">
-            <legend class="main-form__title">посещенные <br> достопримечательности:</legend>
+            <legend class="main-form__title sights__title">посещенные <br> достопримечательности:</legend>
             <div class="sights__wrapper">
               <label class="sights__label">
                 <input class="sights__input visually-hidden" type="checkbox" name="bridge" checked>
@@ -124,9 +124,9 @@
               </label>
             </div>
           </fieldset>
-          <div class="main-form__emotions emotions">
+          <div class="main-form__section main-form__section--emotions emotions">
             <h2 class="emotions__title">Опишите свои эмоции:</h2>
-            <textarea class="emotions__text" name="comment" id="comment-field" rows="8" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="emotions__text" name="comment" id="comment-field" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
           <div class="main-form__button-wrapper">
             <button class="button main-form__button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>

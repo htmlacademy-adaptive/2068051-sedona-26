@@ -4,14 +4,16 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .emotions__text {
   background-color: $inputs-color;
   border: none;
   width: 280px;
-  padding: 20px;
+  font: inherit;
   box-sizing: border-box;
+  padding: 15px 17px 9px;
 
   @include tablet {
     width: 648px;
@@ -23,7 +25,6 @@
 }
 
 .emotions__text::placeholder {
-  font: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

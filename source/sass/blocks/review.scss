@@ -6,20 +6,19 @@
 
   @include tablet {
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
   }
 }
 
 .review__discription {
   text-transform: uppercase;
   width: 100%;
-  max-width: 435px;
-  margin: 0 auto;
+  margin: 25px auto 27px;
 
   @include tablet {
     width: 100%;
-    max-width: 435px;
     line-height: 24px;
+    margin: 0;
   }
 }
 
@@ -28,7 +27,7 @@
   padding-top: 20px;
 
   @include tablet {
-    padding: 64px 166px 102px;
+    padding: 44px 166px 97px 158px;
     border: none;
   }
 }

@@ -1,6 +1,10 @@
 .sights {
   list-style-type: none;
-  margin: 0;
+  // margin: 0;
+
+  @include tablet {
+    margin-top: 46px;
+  }
 }
 
 .sights__title {
@@ -8,7 +12,13 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 21px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
 }
 
 .sights__text {
@@ -16,25 +26,47 @@
   font-size: 18px;
   line-height: 26px;
   text-align: left;
+  margin-left: 44px;
+
+  @include tablet {
+    margin-left: 9px;
+  }
 }
 
 .sights__label {
   width: 100%;
-  margin-top: 36px;
+  margin-bottom: 36px;
   position: relative;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include tablet {
-   width: 280px;
+   width: 224px;
    text-align: left;
    padding-left: 52px;
    box-sizing: border-box;
   }
+
+  &:not(:nth-child(2n)) {
+    @include tablet {
+      margin-right: 28px;
+    }
+  }
 }
 
 .sights__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 24px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px 17px 11px;
+
+  @include tablet {
+    margin-left: 84px;
+    margin-right: 84px;
+    padding: 6px 0 11px 0;
+  }
 }
 
 .sights__checkbox {
@@ -45,6 +77,10 @@
   border-radius: 4px;
   left: -16px;
   top: -10px;
+
+  @include tablet {
+    left: 0;
+  }
 }
 
 .sights__input:checked + .sights__checkbox::before {

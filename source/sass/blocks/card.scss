@@ -91,10 +91,11 @@
 }
 
 .card__button-icon {
-  fill: rgba($basic-text, 0.3);
+  opacity: 0.3;
 
   @include desktop {
-    fill: $additional-color-text;
+    color: $additional-color-text;
+    opacity: 1;
   }
 }
 
