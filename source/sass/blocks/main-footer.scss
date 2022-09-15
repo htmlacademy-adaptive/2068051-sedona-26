@@ -13,6 +13,7 @@
 
   @include tablet {
     margin-bottom: 0;
+    margin-top: 5px;
   }
 }
 
@@ -25,6 +26,16 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 45px 36px 60px;
+    padding: 60px 49px 36px 60px;
+  }
+
+  @include desktop {
+    padding: 25px 109px 36px 119px;
+  }
+}
+
+.main-footer__copyright {
+  @include tablet {
+    margin-left: 9px;
   }
 }

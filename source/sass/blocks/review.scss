@@ -8,6 +8,10 @@
     font-size: 30px;
     margin-bottom: 19px;
   }
+
+  @include desktop {
+    margin-bottom: 28px;
+  }
 }
 
 .review__discription {
@@ -29,5 +33,9 @@
   @include tablet {
     padding: 44px 166px 97px 158px;
     border: none;
+  }
+
+  @include desktop {
+    padding: 89px 166px 66px 164px;
   }
 }

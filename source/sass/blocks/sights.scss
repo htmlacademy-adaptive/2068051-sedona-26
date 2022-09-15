@@ -31,6 +31,10 @@
   @include tablet {
     margin-left: 9px;
   }
+
+  @include desktop {
+    margin-left: 11px;
+  }
 }
 
 .sights__label {
@@ -54,6 +58,20 @@
     @include tablet {
       margin-right: 28px;
     }
+
+    @include desktop {
+      margin-right: 0;
+    }
+  }
+
+  @include desktop {
+    width: auto;
+  }
+
+  &:not(:nth-child(4n)) {
+    @include desktop {
+      margin-right: 64px;
+    }
   }
 }
 
@@ -66,6 +84,12 @@
     margin-left: 84px;
     margin-right: 84px;
     padding: 6px 0 11px 0;
+  }
+
+  @include desktop {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 35px 0 49px 41px;
   }
 }
 

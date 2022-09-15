@@ -23,6 +23,10 @@
   @include tablet {
     margin-left: 59px;
   }
+
+  @include desktop {
+    margin-left: 62px;
+  }
 }
 
 .oppinion__label {
@@ -38,6 +42,14 @@
   @include tablet {
     width: 292px;
   }
+
+  @include desktop {
+    width: 280px;
+  }
+
+  &:not(:nth-child(3)) {
+    margin-right: 28px;
+  }
 }
 
 .oppinion__wrapper {
@@ -47,6 +59,10 @@
 
   @include tablet {
     padding: 38px 24px 11px 36px;
+  }
+
+  @include desktop {
+    padding: 54px 0 1px 50px;
   }
 }
 

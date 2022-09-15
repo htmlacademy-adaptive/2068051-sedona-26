@@ -17,7 +17,9 @@
 }
 
 .advantages__item {
-  padding: 24px 41px;
+  padding-top: 47px;
+  display: flex;
+  flex-direction: column;
 
   @include mobile-width-only {
     width: 100%;

@@ -37,6 +37,10 @@
     font-size: 21px;
     margin-bottom: 31px;
   }
+
+  @include desktop {
+    margin-left: 41px;
+  }
 }
 
 .main-form__label {
@@ -89,6 +93,10 @@
     margin-top: 0;
     width: 324px;
   }
+
+  @include desktop {
+    width: 384px;
+  }
 }
 
 
@@ -103,17 +111,18 @@
   padding-right: 20px;
 
   @include tablet {
-    margin-top: 48px;
+    margin-top: 47px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
     padding-left: 0;
+    margin-bottom: 30px;
   }
 
   @include desktop {
     width: 768px;
-    margin: 48px auto 67px;
+    margin: 47px 97px 67px;
   }
 }
 
@@ -131,12 +140,15 @@
     border-top: solid 1px #DBDBDB;
     padding: 0;
   }
+
+  @include desktop {
+    margin-bottom: 8px;
+  }
 }
 
 .main-form__rule {
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
-  margin-top: 0;
   text-align: right;
   font-size: 12px;
   margin-top: 3px;

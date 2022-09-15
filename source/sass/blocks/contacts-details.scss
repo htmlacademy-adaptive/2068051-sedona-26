@@ -10,6 +10,10 @@
     font-size: 21px;
     margin-left: -20px;
   }
+
+  @include desktop {
+    margin-left: -33px;
+  }
 }
 
 .contacts-details__label {
