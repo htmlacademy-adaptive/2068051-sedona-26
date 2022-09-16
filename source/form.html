@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="images/favicons/apple.png">
@@ -47,6 +49,7 @@
     </header>
     <main class="main-container">
       <section class="intro">
+        <h2 class="visually-hidden">Фон гор Седоны</h2>
         <div class="intro__logo intro__logo--second">
           <img class="intro__logo-image intro__logo-image--second" alt="Логотип Welcome Sedona." src="img/text-sedona.svg"  width="229" height="39">
         </div>
@@ -56,6 +59,7 @@
         <p class="review__discription">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br> а также о посещенных вами достопримечательностях</p>
       </section>
       <section class="search-form">
+        <h2 class="visually-hidden">Форма обрытной связи</h2>
         <form class="main-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="main-form__intro-wrap">
             <fieldset class="main-form__section">
@@ -69,11 +73,11 @@
             </fieldset>
             <fieldset class="main-form__contacts contacts-details main-form__section" >
               <legend class="main-form__title contacts-details__title">Контактная информация:</legend>
-              <label for="contacts-details__input" class="contacts-details__label contacts-details__label--phone">
+              <label for="contacts-details__input--phone" class="contacts-details__label contacts-details__label--phone">
                 <span class="contact-details__text">Контактный телефон*:</span>
                 <input class="contacts-details__input input" type="number" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
               </label>
-              <label for="contacts-details__input" class="contacts-details__label contacts-details__label--email">
+              <label for="contacts-details__input--email" class="contacts-details__label contacts-details__label--email">
                 <span class="contact-details__text">электронная почта*:</span>
                 <input class="contacts-details__input input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
               </label>
@@ -181,14 +185,14 @@
     </footer>    <script src="js/script.js"></script>
     <div class="modal-container modal-container--error">
       <div class="modal-container__error modal-error">
-        <h2 class="modal-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h1>
+        <h2 class="modal-error__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
         <p class="modal-error__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <button class="modal-error__button button button--modal-error">OK</button>
       </div>
     </div>
     <div class="modal-container modal-container--success">
       <div class="modal-container__error modal-success">
-        <h2 class="modal-success__title">Ваш отзыв отправлен!</h1>
+        <h2 class="modal-success__title">Ваш отзыв отправлен!</h2>
         <p class="modal-success__discription">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         <div class="modal-success__button">
           <button class="modal-container__button button button--modal-success">ЗАкРЫТЬ ОКНО</button>

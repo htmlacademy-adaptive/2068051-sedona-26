@@ -1,11 +1,24 @@
 .intro__wrapper {
   padding: 18px 31px 8px;
   position: relative;
+
+  @include tablet {
+    padding: 28px 127px 45px 123px;
+  }
+
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 33px;
+  }
 }
 
 .intro__advatages-text {
   text-transform: uppercase;
   margin-top: 36px;
+
+  @include tablet {
+    margin-top: 29px;
+  }
 }
 
 .intro__logo {
@@ -21,7 +34,7 @@
     order: 2;
     background-image: url("/img/back-desktop.jpg");
     padding-top: 77px;
-    padding-bottom: 91px;
+    padding-bottom: 87px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/back-desktop@2x.jpg");
@@ -71,9 +84,13 @@
   line-height: 26px;
   text-transform: uppercase;
 
+  @include tablet {
+    font-size: 21px;
+  }
+
   @include desktop {
-    margin-left: 358px;
-    margin-right: 359px;
+    margin-left: 189px;
+    margin-right: 189px;
   }
 }
 

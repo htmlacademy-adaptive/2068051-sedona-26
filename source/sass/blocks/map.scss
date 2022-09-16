@@ -1,6 +1,16 @@
 .map {
   margin: auto;
+  background-image: url("/img/map-mobile.jpg");
+
+  @include tablet {
+    background-image: url("/img/map-tablet.jpg");
+  }
+
+  @include desktop {
+    background-image: url("/img/map-desktop.jpg");
+  }
 }
+
 .map iframe {
   border: none;
   display: block;
