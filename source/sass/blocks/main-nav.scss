@@ -58,6 +58,16 @@
   &::after {
     transform: rotate(-45deg);
   }
+
+  &:hover::after,
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:active::after,
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 @include mobile-width-only {

@@ -8,3 +8,14 @@
 .social__item:not(:last-child) {
   margin-right: 6px;
 }
+
+.social__link {
+  color: $basic-back;
+}
+.social__link:hover {
+  color: #669EC0;
+}
+
+.social__link:active {
+  color: #5496BD;
+}

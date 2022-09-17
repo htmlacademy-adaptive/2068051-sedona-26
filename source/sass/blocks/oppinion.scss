@@ -93,3 +93,14 @@
   content: "";
   transition: width 0.3s, height 0.3s;
 }
+
+.oppinion__label:active  .oppinion__radio::before {
+  opacity: 20%;
+}
+
+.oppinion__label:hover .oppinion__radio {
+  background-color: $decoration-color;
+}
+.oppinion__label:active .oppinion__radio {
+  background-color: #d5d5d5;
+}

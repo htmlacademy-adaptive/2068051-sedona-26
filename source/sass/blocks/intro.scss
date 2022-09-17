@@ -35,11 +35,8 @@
     background-image: url("/img/back-desktop.jpg");
     padding-top: 77px;
     padding-bottom: 87px;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("/img/back-desktop@2x.jpg");
-    }
   }
+
   &--second {
     padding-top: 52px;
     padding-bottom: 62px;
