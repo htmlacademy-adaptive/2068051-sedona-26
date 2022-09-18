@@ -54,8 +54,8 @@
 .main-form__input {
   width: 280px;
   padding-top: 15px;
-  padding-bottom: 16px;
-  padding-left: 19px;
+  padding-bottom: 17px;
+  padding-left: 10px;
   background-color: $inputs-color;
   border: 4px solid $inputs-color;
   box-sizing: border-box;
@@ -86,12 +86,13 @@
 }
 
 .main-form__button {
-  margin-top: 30px;
+  margin-top: 36px;
   width: 280px;
 
   @include tablet {
     margin-top: 0;
     width: 324px;
+    padding-right: 13px;
   }
 
   @include desktop {
@@ -102,7 +103,7 @@
 
 .main-form__oppinion {
   @include tablet {
-    margin-top: 45px;
+    margin-top: 42px;
   }
 }
 
@@ -117,7 +118,7 @@
     width: 100%;
     align-items: center;
     padding-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 63px;
   }
 
   @include desktop {
@@ -129,7 +130,7 @@
 .main-form__section {
   border: none;
   border-bottom: solid 1px #e5e5e5;
-  padding: 24px 20px;
+  padding: 24px 20px 18px;
 
   &--emotions {
     border-bottom: none;
@@ -157,5 +158,12 @@
     font-size: 14px;
     padding-top: 19px;
     margin-top: 0;
+  }
+}
+
+.main-form__name,
+.main-form__contacts {
+  @include tablet {
+    border: none;
   }
 }

@@ -4,11 +4,11 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 20px;
 
   @include tablet {
     font-size: 21px;
     margin-left: -20px;
+    margin-bottom: 19px;
   }
 
   @include desktop {
@@ -25,7 +25,7 @@
   width: 280px;
   margin-top: -3px;
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 
   &--phone {
     position: relative;
@@ -41,7 +41,7 @@
       display: block;
       content: "";
       background-color: #E6E6E6;
-      background-image: url("../../img/icons/phone-icon.svg");
+      background-image: url("../../img/phone-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 58px;
@@ -63,7 +63,7 @@
       display: block;
       content: "";
       background-color: #e6e6e6;
-      background-image: url("../../img/icons/email-icon.svg");
+      background-image: url("../../img/email-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 58px;
@@ -110,4 +110,14 @@
 
 .contact-details__text {
   padding-left: 16px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }

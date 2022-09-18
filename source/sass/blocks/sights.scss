@@ -78,7 +78,7 @@
 .sights__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 6px 17px 11px;
+  padding: 6px 17px 17px;
 
   @include tablet {
     margin-left: 84px;
@@ -99,7 +99,7 @@
   height: 46px;
   background-color: $inputs-color;
   border-radius: 4px;
-  left: -16px;
+  left: -19px;
   top: -10px;
 
   @include tablet {

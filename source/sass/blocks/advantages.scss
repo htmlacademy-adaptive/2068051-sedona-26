@@ -56,7 +56,7 @@
       position: absolute;
       background-image: url("/img/triangle-index.svg");
       content: "";
-      width: 320px;
+      width: 767px;
       height: 37px;
       bottom: 0;
       left: 0;
@@ -240,7 +240,7 @@
   }
 }
 
-.dvantages__description br,
+.advantages__description br,
 .advantages__title br {
   @include mobile-width-only {
     display: none;
@@ -251,12 +251,15 @@
   }
 
   @include desktop {
-    display:block
+    display: block;
   }
 }
 
 .advantages__picture {
   display: block;
+  width: 100%;
+  object-fit: cover;
+
   @include tablet {
     width: 512px;
     height: 256px;
@@ -285,4 +288,9 @@
   .advantages__item--bridge {
     width: 1200px;
   }
+}
+
+.advantages__wrap-city,
+.advantages__wrap-bridge {
+  width: 100%;
 }

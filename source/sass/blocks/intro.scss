@@ -25,16 +25,24 @@
   background-image: url("/img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2d1468;
+  background-color: #3d1e09;
   padding: 90px 19px 80px;
   position: relative;
   background-position-y: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/back-mobile@2x.jpg");
+  }
 
   @include tablet {
     order: 2;
     background-image: url("/img/back-desktop.jpg");
     padding-top: 77px;
     padding-bottom: 87px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/back-desktop@2x.jpg");
+    }
   }
 
   &--second {
@@ -97,7 +105,7 @@
     height: 350px;
   }
 
-  &--second{
+  &--second {
     @include tablet {
       width: 457px;
       height: 78px;

@@ -1,9 +1,9 @@
-.page {
+.page__body {
   @include desktop {
     background-color: $inputs-color;
   }
 }
-.page__body {
+.page__container {
   min-width: 320px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -26,7 +26,7 @@
   }
 }
 
-.page__wrapper  {
+.page__wrapper {
   @include tablet {
     padding: 0 60px;
   }
@@ -42,11 +42,13 @@
     margin-left: 60px;
     margin-right: 60px;
     padding: 0;
+    margin-bottom: 36px;
   }
 
   @include desktop {
     margin-top: 62px;
     margin-left: 200px;
     margin-right: 200px;
+    margin-bottom: 76px;
   }
 }

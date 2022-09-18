@@ -5,8 +5,6 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-top: 24px;
 
   @include tablet {
     margin: 0 auto;
@@ -40,22 +38,27 @@
   }
 
   @include tablet {
-    width: 292px;
+    width: 280px;
+
+    &:not(:nth-child(2)) {
+      margin-right: 16px;
+    }
   }
 
   @include desktop {
     width: 280px;
-  }
-
-  &:not(:nth-child(3)) {
     margin-right: 28px;
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
   }
 }
 
 .oppinion__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding: 5px 16px 11px;
+  padding: 5px 15px 17px;
 
   @include tablet {
     padding: 38px 24px 11px 36px;

@@ -34,4 +34,8 @@
   width: 648px;
   height: 500px;
   }
+
+  @include desktop {
+    width: 800px;
+  }
 }
