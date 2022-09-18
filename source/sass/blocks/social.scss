@@ -8,3 +8,31 @@
 .social__item:not(:last-child) {
   margin-right: 6px;
 }
+
+.social__item {
+  width: 48px;
+  height: 48px;
+  background-color: $basic-back;
+
+  &:hover {
+    background-color: $basic-back-hover;
+  }
+
+  &:active {
+    background-color: $basic-back-active;
+  }
+}
+
+.social__link {
+  display: block;
+  text-align: center;
+  padding: 12px;
+
+  &--youtube {
+    padding: 15px;
+  }
+}
+
+.social__link:active svg {
+  opacity: 0.3;
+}

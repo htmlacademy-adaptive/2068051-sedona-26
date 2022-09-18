@@ -26,12 +26,20 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  padding-top: 24px;
+  padding-top: 23px;
+  margin:0 auto;
 
   @include tablet {
     padding-top: 0;
     width: 100%;
     max-width: 402px;
+    margin-left: 18px;
+    font-size: 21px;
+    margin-bottom: 31px;
+  }
+
+  @include desktop {
+    margin-left: 41px;
   }
 }
 
@@ -39,18 +47,20 @@
   display: block;
   text-align: left;
   text-transform: uppercase;
-  margin-top: 16px;
-  padding-left: 16px;
+  padding-left: 15px;
+  margin-top: -3px;
 }
 
 .main-form__input {
   width: 280px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  padding-left: 10px;
   background-color: $inputs-color;
   border: 4px solid $inputs-color;
   box-sizing: border-box;
+  margin-bottom: 20px;
+  font-family: inherit;
 
   &:hover {
     border-color: #e5e5e5;
@@ -76,19 +86,24 @@
 }
 
 .main-form__button {
-  margin-top: 56px;
+  margin-top: 36px;
   width: 280px;
 
   @include tablet {
     margin-top: 0;
+    width: 324px;
+    padding-right: 13px;
+  }
+
+  @include desktop {
+    width: 384px;
   }
 }
 
-@include tablet {
-  .main-form__oppinion,
-  .main-form__sights,
-  .main-form__emotions {
-    margin-top: 48px;
+
+.main-form__oppinion {
+  @include tablet {
+    margin-top: 42px;
   }
 }
 
@@ -97,34 +112,58 @@
   padding-right: 20px;
 
   @include tablet {
-    margin-top: 48px;
+    margin-top: 47px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    padding-left: 0;
+    margin-bottom: 63px;
   }
 
   @include desktop {
     width: 768px;
-    margin: 48px auto 67px;
+    margin: 47px 97px 67px;
   }
 }
 
 .main-form__section {
   border: none;
   border-bottom: solid 1px #e5e5e5;
-  padding: 24px 20px;
+  padding: 24px 20px 18px;
+
+  &--emotions {
+    border-bottom: none;
+  }
 
   @include tablet  {
     border-bottom: none;
     border-top: solid 1px #DBDBDB;
     padding: 0;
   }
+
+  @include desktop {
+    margin-bottom: 8px;
+  }
 }
 
 .main-form__rule {
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
-  margin-top: 0;
   text-align: right;
+  font-size: 12px;
+  margin-top: 3px;
+
+  @include tablet {
+    font-size: 14px;
+    padding-top: 19px;
+    margin-top: 0;
+  }
+}
+
+.main-form__name,
+.main-form__contacts {
+  @include tablet {
+    border: none;
+  }
 }

@@ -8,8 +8,17 @@
   font-weight: 700;
   border: none;
   text-align: center;
-  padding-top: 16px;
+  padding-top: 18px;
   padding-bottom: 14px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-back-hover;
+  }
+
+  &:active {
+    background-color: $basic-back-active;
+  }
 
   &--search {
     width: 284px;
@@ -23,13 +32,23 @@
     font-size: 18px;
     padding-right: 64px;
     padding-left: 63px;
+    width: 180px;
+
+    @include tablet {
+      width: 272px;
+    }
   }
 
   &--modal-success {
     font-size: 18px;
     width: 280px;
-    padding-right: 62px;
+    padding-right: 65px;
     padding-left: 60px;
+
+    @include tablet {
+      width: 458px;
+      font-size: 21px;
+    }
   }
 }
 

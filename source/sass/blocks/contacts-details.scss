@@ -4,21 +4,35 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 21px;
+    margin-left: -20px;
+    margin-bottom: 19px;
+  }
+
+  @include desktop {
+    margin-left: -33px;
+  }
 }
 
 .contacts-details__label {
   display: block;
   text-transform: uppercase;
-  text-align: left;
-  padding-left: 16px;
   margin-top: 16px;
   display: flex;
   flex-direction: column;
   width: 280px;
+  margin-top: -3px;
+  text-align: left;
+  margin-bottom: 18px;
 
   &--phone {
     position: relative;
+
+    @include tablet {
+      margin-top: 9px;
+    }
 
     &::after {
       position: absolute;
@@ -27,7 +41,7 @@
       display: block;
       content: "";
       background-color: #E6E6E6;
-      background-image: url("../../img/icons/phone-icon.svg");
+      background-image: url("../../img/phone-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 58px;
@@ -38,6 +52,10 @@
   &--email {
     position: relative;
 
+    @include tablet {
+      margin-top: 3px;
+    }
+
     &::after {
       position: absolute;
       right: 0;
@@ -45,7 +63,7 @@
       display: block;
       content: "";
       background-color: #e6e6e6;
-      background-image: url("../../img/icons/email-icon.svg");
+      background-image: url("../../img/email-icon.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 58px;
@@ -92,4 +110,14 @@
 
 .contact-details__text {
   padding-left: 16px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
 }

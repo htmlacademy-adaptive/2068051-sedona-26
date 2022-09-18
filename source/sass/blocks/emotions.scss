@@ -3,18 +3,28 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: -4px;
+  margin-top: 0;
+
+  @include tablet {
+    margin: 4px auto 20px;
+    font-size: 21px;
+  }
 }
 
 .emotions__text {
   background-color: $inputs-color;
   border: none;
   width: 280px;
-  padding: 20px;
+  font: inherit;
   box-sizing: border-box;
+  padding: 15px 17px 9px;
 
   @include tablet {
     width: 648px;
+    padding: 15px 16px 18px;
+    margin-top: 9px;
+    font-weight: 700;
   }
 
   @include desktop {
@@ -23,7 +33,6 @@
 }
 
 .emotions__text::placeholder {
-  font: inherit;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;

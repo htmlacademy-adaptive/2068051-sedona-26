@@ -1,42 +1,64 @@
 .intro__wrapper {
-  padding: 32px 20px;
+  padding: 18px 31px 8px;
   position: relative;
+
+  @include tablet {
+    padding: 28px 127px 45px 123px;
+  }
+
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 33px;
+  }
 }
 
 .intro__advatages-text {
   text-transform: uppercase;
+  margin-top: 36px;
+
+  @include tablet {
+    margin-top: 29px;
+  }
 }
 
 .intro__logo {
   background-image: url("/img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2d1468;
-  padding: 90px 19px 85px;
+  background-color: #3d1e09;
+  padding: 90px 19px 80px;
   position: relative;
+  background-position-y: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/back-mobile@2x.jpg");
+  }
 
   @include tablet {
     order: 2;
     background-image: url("/img/back-desktop.jpg");
     padding-top: 77px;
-    padding-bottom: 91px;
+    padding-bottom: 87px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/back-desktop@2x.jpg");
     }
   }
+
   &--second {
     padding-top: 52px;
-    padding-bottom: 67px;
+    padding-bottom: 62px;
 
     @include tablet {
       padding-top: 95px;
-      padding-bottom: 117px;
+      padding-bottom: 112px;
+      background-size: auto;
+      background-position-x: 50%;
     }
 
     @include desktop {
       padding-top: 101px;
-      padding-bottom: 120px;
+      padding-bottom: 115px;
     }
   }
   // @include desktop {
@@ -51,7 +73,7 @@
 
 .intro__logo::after {
   position: absolute;
-  background-image: url("/img/icons/intro-triangle.svg");
+  background-image: url("/img/intro-triangle.svg");
   content: "";
   background-position: center bottom;
   background-size: cover;
@@ -67,9 +89,13 @@
   line-height: 26px;
   text-transform: uppercase;
 
+  @include tablet {
+    font-size: 21px;
+  }
+
   @include desktop {
-    margin-left: 358px;
-    margin-right: 359px;
+    margin-left: 189px;
+    margin-right: 189px;
   }
 }
 
@@ -79,7 +105,7 @@
     height: 350px;
   }
 
-  &--second{
+  &--second {
     @include tablet {
       width: 457px;
       height: 78px;

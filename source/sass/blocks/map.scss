@@ -1,9 +1,22 @@
 .map {
   margin: auto;
+  background-image: url("/img/map-mobile.jpg");
+  background-size: cover;
+
+  @include tablet {
+    background-image: url("/img/map-tablet.jpg");
+    background-size: cover;
+  }
+
+  @include desktop {
+    background-image: url("/img/map-desktop.jpg");
+  }
 }
+
 .map iframe {
   border: none;
   display: block;
+  width: 100%;
 
   @include tablet {
     width: 768px;

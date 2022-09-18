@@ -3,21 +3,46 @@
   position: relative;
   margin: auto;
   width: 320px;
+
+  @include tablet {
+    width: 640px;
+  }
+}
+
+.modal-success__info {
+  padding: 36px 39px 0 37px;
+
+  @include tablet {
+    padding: 54px 39px 0 38px;
+  }
 }
 
 .modal-success__button {
   padding: 20px;
   background-color: $inputs-color;
+
+  @include tablet {
+    padding: 44px 91px;
+  }
 }
 
 .modal-success__title {
-  margin-top: 36px;
+  margin-top: 0;
+  font-size: 18px;
   text-transform: uppercase;
+  margin-bottom: 29px;
+
+  @include tablet {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .modal-success__discription {
   text-transform: uppercase;
-  margin-left: 37px;
-  margin-right: 39px;
-  margin-bottom: 27px;
+  margin-bottom: 53px;
+
+  @include tablet {
+    margin-bottom: 51px;
+  }
 }

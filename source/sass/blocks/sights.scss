@@ -1,6 +1,10 @@
 .sights {
   list-style-type: none;
-  margin: 0;
+  // margin: 0;
+
+  @include tablet {
+    margin-top: 46px;
+  }
 }
 
 .sights__title {
@@ -8,7 +12,13 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 21px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
 }
 
 .sights__text {
@@ -16,25 +26,71 @@
   font-size: 18px;
   line-height: 26px;
   text-align: left;
+  margin-left: 44px;
+
+  @include tablet {
+    margin-left: 9px;
+  }
+
+  @include desktop {
+    margin-left: 11px;
+  }
 }
 
 .sights__label {
   width: 100%;
-  margin-top: 36px;
+  margin-bottom: 36px;
   position: relative;
+  text-align: left;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   @include tablet {
-   width: 280px;
+   width: 224px;
    text-align: left;
    padding-left: 52px;
    box-sizing: border-box;
   }
+
+  &:not(:nth-child(2n)) {
+    @include tablet {
+      margin-right: 28px;
+    }
+
+    @include desktop {
+      margin-right: 0;
+    }
+  }
+
+  @include desktop {
+    width: auto;
+  }
+
+  &:not(:nth-child(4n)) {
+    @include desktop {
+      margin-right: 64px;
+    }
+  }
 }
 
 .sights__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 24px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px 17px 17px;
+
+  @include tablet {
+    margin-left: 84px;
+    margin-right: 84px;
+    padding: 6px 0 11px 0;
+  }
+
+  @include desktop {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 35px 0 49px 41px;
+  }
 }
 
 .sights__checkbox {
@@ -43,8 +99,12 @@
   height: 46px;
   background-color: $inputs-color;
   border-radius: 4px;
-  left: -16px;
+  left: -19px;
   top: -10px;
+
+  @include tablet {
+    left: 0;
+  }
 }
 
 .sights__input:checked + .sights__checkbox::before {
@@ -53,6 +113,18 @@
   left: 13px;
   width: 22px;
   height: 16px;
-  background-image: url("../img/icons/arrow.svg");
+  color: rgb(119, 41, 28);
+  background-image: url("../img/arrow.svg");
   content: "";
+}
+
+.sights__label:active  .sights__checkbox::before {
+  opacity: 20%;
+}
+
+.sights__label:hover .sights__checkbox {
+  background-color: $decoration-color;
+}
+.sights__label:active .sights__checkbox {
+  background-color: #d5d5d5;
 }

@@ -11,7 +11,6 @@ import svgo from 'gulp-svgmin';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import {deleteAsync} from 'del';
-// import squoosh from 'gulp-libsquoosh';
 
 // Styles
 
@@ -41,12 +40,14 @@ const html = () =>  {
     .pipe(gulp.dest('build/img'));
  }
 
-const sprite = () => {
+export const sprite = () => {
   return gulp.src('source/img/icons/*.svg')
     .pipe(svgo())
-    .pipe(svgstore({inLineSvg: true}))
+    .pipe(svgstore({
+    inlineSvg: true
+     }))
     .pipe(rename('sprite.svg'))
-    .pipe(gulp.dest('build/img'))
+    .pipe(gulp.dest('build/img'));
 }
 
 // // images
@@ -103,7 +104,7 @@ const clean = () => {
 function server(done) {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,

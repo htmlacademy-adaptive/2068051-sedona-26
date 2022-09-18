@@ -1,15 +1,15 @@
-.page {
+.page__body {
   @include desktop {
     background-color: $inputs-color;
   }
 }
-.page__body {
+.page__container {
   min-width: 320px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   background-color: $additional-color-text;
-  color: #000000;
+  color: $basic-text;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -26,8 +26,29 @@
   }
 }
 
-.page__wrapper  {
+.page__wrapper {
   @include tablet {
     padding: 0 60px;
+  }
+}
+
+.page__wrapper-video {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+
+  @include tablet {
+    margin-top: 62px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 0;
+    margin-bottom: 36px;
+  }
+
+  @include desktop {
+    margin-top: 62px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 76px;
   }
 }

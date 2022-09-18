@@ -6,28 +6,42 @@
 
   @include tablet {
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
+  }
+
+  @include desktop {
+    margin-bottom: 28px;
   }
 }
 
 .review__discription {
   text-transform: uppercase;
   width: 100%;
-  max-width: 435px;
-  margin: 0 auto;
+  margin: 25px auto 27px;
 
   @include tablet {
     width: 100%;
-    max-width: 435px;
     line-height: 24px;
+    margin: 0;
+  }
+}
+
+.review__discription br {
+  @include mobile-width-only {
+    display: none;
   }
 }
 
 .review {
   border-bottom: solid 1px #e5e5e5;
+  padding-top: 20px;
 
   @include tablet {
-    padding: 64px 166px 102px;
+    padding: 44px 166px 97px 158px;
     border: none;
+  }
+
+  @include desktop {
+    padding: 89px 166px 66px 164px;
   }
 }
