@@ -8,8 +8,8 @@
     <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
@@ -75,11 +75,11 @@
               <fieldset class="main-form__contacts contacts-details main-form__section" >
                 <legend class="main-form__title contacts-details__title">Контактная информация:</legend>
                 <label for="contacts-details__input--phone" class="contacts-details__label contacts-details__label--phone">
-                  <span class="contact-details__text">Контактный телефон*:</span>
-                  <input class="contacts-details__input input" type="number" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
+                  <span class="contacts-details__text">Контактный телефон*:</span>
+                  <input class="contacts-details__input input" type="tel" id="contacts-details__input--phone" name="contacts-details__input--phone" placeholder="Введите телефон" required>
                 </label>
                 <label for="contacts-details__input--email" class="contacts-details__label contacts-details__label--email">
-                  <span class="contact-details__text">электронная почта*:</span>
+                  <span class="contacts-details__text">электронная почта*:</span>
                   <input class="contacts-details__input input" type="email" id="contacts-details__input--email" name="contacts-details__input--email" placeholder="Введите e-mail" required>
                 </label>
               </fieldset>
@@ -89,17 +89,17 @@
               <div class="oppinion__wrapper">
                 <label class="oppinion__label">
                   <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="good" checked>
-                  <span class="oppinion__radio"></span>
+                  <span class="oppinion__radio" tabindex="1"></span>
                   <span class="oppinion__text">Скорее положительное</span>
                 </label>
                 <label class="oppinion__label">
                   <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="bad">
-                  <span class="oppinion__radio"></span>
+                  <span class="oppinion__radio" tabindex="2"></span>
                   <span class="oppinion__text">Скорее отрицательное</span>
                 </label>
                 <label class="oppinion__label">
                   <input class="oppinion__input visually-hidden" type="radio" name="oppinion" value="nothing">
-                  <span class="oppinion__radio"></span>
+                  <span class="oppinion__radio" tabindex="3"></span>
                   <span class="oppinion__text">Затрудняюсь ответить</span>
                 </label>
               </div>
@@ -109,28 +109,29 @@
               <div class="sights__wrapper">
                 <label class="sights__label">
                   <input class="sights__input visually-hidden" type="checkbox" name="bridge" checked>
-                  <span class="sights__checkbox"></span>
+                  <span class="sights__checkbox" tabindex="4"></span>
                   <span class="sights__text">Мост Дьявола</span>
                 </label>
                 <label class="sights__label">
                   <input class="sights__input visually-hidden" type="checkbox" name="bell-mountin" checked>
-                  <span class="sights__checkbox"></span>
+                  <span class="sights__checkbox" tabindex="5"></span>
                   <span class="sights__text">Гора-Колокол</span>
                 </label>
                 <label class="sights__label">
                   <input class="sights__input visually-hidden" type="checkbox" name="slide-park" checked>
-                  <span class="sights__checkbox"></span>
+                  <span class="sights__checkbox" tabindex="6"></span>
                   <span class="sights__text">Слайд-парк</span>
                 </label>
                 <label class="sights__label">
                   <input class="sights__input visually-hidden" type="checkbox" name="rocks">
-                  <span class="sights__checkbox"></span>
+                  <span class="sights__checkbox" tabindex="7"></span>
                   <span class="sights__text">Красные скалы</span>
                 </label>
               </div>
             </fieldset>
             <fieldset class="main-form__section main-form__section--emotions emotions">
               <legend class="main-form__title emotions__title">Опишите свои эмоции:</legend>
+              <label class="visually-hidden" for="comment-field">Ваши комментарии.</label>
               <textarea class="emotions__text" name="comment" id="comment-field" rows="6" placeholder="Опишите подробно все свои восторги"></textarea>
             </fieldset>
             <div class="main-form__button-wrapper">
@@ -176,8 +177,8 @@
           </div>
           <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
-              <span class="copyright__text">Разработано:</span>
-              <svg class="copyright__link-icon" width="45" height="39" fill="currentcolor">
+              <span class="copyright__text">Разработано</span>
+              <svg class="copyright__link-icon" width="51" height="41" fill="currentcolor">
                 <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>

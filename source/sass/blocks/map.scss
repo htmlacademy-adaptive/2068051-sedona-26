@@ -1,15 +1,15 @@
 .map {
   margin: auto;
-  background-image: url("/img/map-mobile.jpg");
+  background-image: url("../img/map-mobile.jpg");
   background-size: cover;
 
   @include tablet {
-    background-image: url("/img/map-tablet.jpg");
+    background-image: url("../img/map-tablet.jpg");
     background-size: cover;
   }
 
   @include desktop {
-    background-image: url("/img/map-desktop.jpg");
+    background-image: url("../img/map-desktop.jpg");
   }
 }
 

@@ -8,8 +8,8 @@
     <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="images/favicons/apple.png">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
@@ -62,7 +62,7 @@
           <h2 class="visually-hidden">Преимущества.</h2>
           <ol class="advantages__list">
             <li class="advantages__wrap-city">
-              <figure class="advantages__item--city">
+              <figure class="advantages__container advantages__container--city">
                 <figcaption class="advantages__item advantages__item--town advantages__item--order">
                   <h3 class="advantages__title">Настоящий городок</h3>
                   <p class="advantages__description">Седона не аттракцион для туристов,<br> там течёт своя жизнь</p>
@@ -89,7 +89,7 @@
               </ul>
             </li>
             <li class="advantages__wrap-bridge">
-              <figure class="advantages__item--bridge ">
+              <figure class="advantages__container advantages__container--bridge ">
                 <figcaption class="advantages__item advantages__item--order">
                   <h3 class="advantages__title">Там есть<br> мост дьявола</h3>
                   <p class="advantages__description">Да, по нему можно пройти!<br> Если вы осмелитесь, разумеется</p>
@@ -118,9 +118,10 @@
         <section class="hotel-search">
           <h2 class="hotel-search__title">Заинтересовались?</h2>
           <p class="hotel-search__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="button button--search hotel-search__button" href="#">Найти Гостиницу</button>
+          <a class="button button--search hotel-search__button" href="#">Найти Гостиницу</a>
         </section>
         <section class="map">
+          <h2 class="visually-hidden">Карта окрестностей Седоны.</h2>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380555.9499970315!2d-111.9532317173502!3d34.913374820791525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660390178897!5m2!1sru!2sru" width="320" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Карта города Седона в штате Аризона."></iframe>
         </section>
       </main>
@@ -159,9 +160,9 @@
             </ul>
           </div>
           <div class="main-footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
-              <span class="copyright__text">Разработано:</span>
-              <svg class="copyright__link-icon" width="45" height="39" fill="currentcolor">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
+              <span class="copyright__text">Разработано</span>
+              <svg class="copyright__link-icon" width="51" height="41" fill="currentcolor">
                 <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
             </a>

@@ -32,7 +32,6 @@
   }
 
   @include tablet {
-    width: 33.3%;
     padding: 32px;
     width: 256px;
     min-height: 256px;
@@ -44,35 +43,6 @@
 
   @include desktop {
     padding-top: 26px;
-  }
-  &--city {
-    position: relative;
-    background-color: $basic-back;
-    color: #ffffff;
-    margin: 0;
-
-    &::before {
-      @include mobile-width-only {
-      position: absolute;
-      background-image: url("/img/triangle-index.svg");
-      content: "";
-      width: 767px;
-      height: 37px;
-      bottom: 0;
-      left: 0;
-      top: -5px;
-      }
-    }
-  }
-
-  &--bridge {
-    background-color: $basic-back;
-    color: #ffffff;
-    margin: 0;
-
-    @include tablet {
-      flex-direction: row-reverse;
-    }
   }
 
   &--places {
@@ -185,6 +155,41 @@
   }
 }
 
+.advantages__container {
+  display: flex;
+
+
+  &--bridge {
+    background-color: $basic-back;
+    color: #ffffff;
+    margin: 0;
+
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &--city {
+    position: relative;
+    background-color: $basic-back;
+    color: #ffffff;
+    margin: 0;
+
+    &::before {
+      @include mobile-width-only {
+        position: absolute;
+        background-image: url("/img/triangle-index.svg");
+        content: "";
+        width: 767px;
+        height: 37px;
+        bottom: 0;
+        left: 0;
+        top: -5px;
+      }
+    }
+  }
+}
+
 .advantages__container-food-etc {
   padding: 0 8px 52px 50px;
   list-style: none;
@@ -221,7 +226,6 @@
 }
 
 .advantages__description {
-  // font-weight: 700;
   text-transform: uppercase;
   order: 2;
   margin: 0;
@@ -271,7 +275,6 @@
 }
 
 @include tablet {
-
   .advantages__item--city,
   .advantages__item--bridge {
     display: flex;

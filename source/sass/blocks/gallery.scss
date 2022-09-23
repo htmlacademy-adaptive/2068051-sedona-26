@@ -5,6 +5,7 @@
   @include tablet {
     padding-top: 62px;
   }
+
   @include desktop {
     padding: 0;
     padding-top: 102px;
@@ -48,6 +49,7 @@
 .gallery__discription br {
   display: none;
 }
+
 .gallery__list {
   padding-left: 0;
   list-style-type: none;
