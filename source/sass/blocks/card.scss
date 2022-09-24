@@ -10,6 +10,7 @@
     }
   }
 }
+
 .card__photo {
   width: 100%;
   object-fit: cover;
@@ -17,6 +18,7 @@
   @include tablet {
     display: block;
     height: 267px;
+
     &--main {
       height: 400px;
     }
@@ -44,6 +46,7 @@
 .card__author {
   color: $secondary-text;
   margin: 0;
+
   @include desktop {
     color: $additional-color-text;
   }
@@ -101,6 +104,6 @@
 }
 
 .card__results {
-  margin: 0;
   font-weight: 700;
+  margin: 0;
 }

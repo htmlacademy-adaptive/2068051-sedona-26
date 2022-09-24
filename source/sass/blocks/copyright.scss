@@ -5,9 +5,9 @@
 
 .copyright__link {
   display: flex;
+  color: $basic-text;
   align-items: center;
   text-decoration: none;
-  color: $basic-text;
   margin-left: 10px;
 
   @include tablet {

@@ -260,8 +260,8 @@
 }
 
 .advantages__picture {
-  display: block;
   width: 100%;
+  display: block;
   object-fit: cover;
 
   @include tablet {
