@@ -1,3 +1,18 @@
+.video__wrap {
+  position: relative;
+}
+
+.video__photo {
+  @include tablet {
+    width: 648px;
+    height: 500px;
+  }
+
+  @include desktop {
+    width: 800px;
+  }
+}
+
 .video__title {
   font-weight: 700;
   text-transform: uppercase;
@@ -17,8 +32,8 @@
   margin: 30px 5px 38px;
 
   @include tablet {
-    padding-left: 70px;
     padding-right: 70px;
+    padding-left: 70px;
     margin-bottom: 85px;
     margin-top: 32px;
   }
@@ -29,13 +44,19 @@
   }
 }
 
-.video__frame {
-  @include tablet {
-  width: 648px;
-  height: 500px;
-  }
+.video__button {
+  position: absolute;
+  cursor: pointer;
+  width: 48px;
+  height: 54px;
+  border: none;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  transform: translate(-50%, -50%);
+}
 
-  @include desktop {
-    width: 800px;
-  }
+.video__play-button {
+  width: 48px;
+  height: 54px;
 }

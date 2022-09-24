@@ -71,9 +71,7 @@
   font-size: 18px;
   line-height: 26px;
   padding: 17px 83px 12px 81px;
-  // @media (min-width: @tablet-width) {
-  //   color: @balck;
-  // }
+
   @include tablet {
     font-size: 14px;
     line-height: 21px;
@@ -96,14 +94,12 @@
 // }
 
 @include tablet {
-
   .site-list__item:nth-child(2) {
     margin-right: 153px;
   }
 }
 
 @include desktop {
-
   .site-list__item:nth-child(2) {
     margin-right: 240px;
   }

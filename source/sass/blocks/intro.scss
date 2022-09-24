@@ -1,79 +1,51 @@
 .intro__wrapper {
-  padding: 18px 31px 8px;
+  padding: 32px 20px;
   position: relative;
-
-  @include tablet {
-    padding: 28px 127px 45px 123px;
-  }
-
-  @include desktop {
-    padding-top: 40px;
-    padding-bottom: 33px;
-  }
 }
 
 .intro__advatages-text {
   text-transform: uppercase;
-  margin-top: 36px;
-
-  @include tablet {
-    margin-top: 29px;
-  }
 }
 
 .intro__logo {
-  background-image: url("/img/back-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #3d1e09;
-  padding: 90px 19px 80px;
+  background-color: #2d1468;
+  padding: 90px 19px 85px;
   position: relative;
-  background-position-y: 100%;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("/img/back-mobile@2x.jpg");
-  }
 
   @include tablet {
     order: 2;
-    background-image: url("/img/back-desktop.jpg");
+    background-image: url("../img/back-desktop.jpg");
     padding-top: 77px;
-    padding-bottom: 87px;
+    padding-bottom: 91px;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/back-desktop@2x.jpg");
+      background-image: url("../img/back-desktop@2x.jpg");
     }
   }
 
   &--second {
     padding-top: 52px;
-    padding-bottom: 62px;
+    padding-bottom: 67px;
 
     @include tablet {
       padding-top: 95px;
-      padding-bottom: 112px;
-      background-size: auto;
-      background-position-x: 50%;
+      padding-bottom: 117px;
     }
 
     @include desktop {
       padding-top: 101px;
-      padding-bottom: 115px;
+      padding-bottom: 120px;
     }
   }
-  // @include desktop {
-  //   background-image: url("/img/back-desktop.jpg");
-
-  //   @media (min-resolution: 2dppx) {
-  //     background-image: url("/img/back-desktop@2x.jpg");
-  //   }
-  // }
 }
 
 
 .intro__logo::after {
   position: absolute;
-  background-image: url("/img/intro-triangle.svg");
+  background-image: url("../img/icons/intro-triangle.svg");
   content: "";
   background-position: center bottom;
   background-size: cover;
@@ -89,20 +61,16 @@
   line-height: 26px;
   text-transform: uppercase;
 
-  @include tablet {
-    font-size: 21px;
-  }
-
   @include desktop {
-    margin-left: 189px;
-    margin-right: 189px;
+    margin-left: 358px;
+    margin-right: 359px;
   }
 }
 
 .intro__logo-image {
   @include tablet {
-    width: 461px;
     height: 350px;
+    width: 461px;
   }
 
   &--second {
@@ -110,6 +78,7 @@
       width: 457px;
       height: 78px;
     }
+
     @include desktop {
       width: 460px;
       height: 80px;

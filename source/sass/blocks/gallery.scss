@@ -5,6 +5,7 @@
   @include tablet {
     padding-top: 62px;
   }
+
   @include desktop {
     padding: 0;
     padding-top: 102px;
@@ -15,8 +16,8 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
-  line-height: 26px;
   margin: 0 auto 24px;
+  line-height: 26px;
 
   @include tablet {
     margin-bottom: 33px;
@@ -48,6 +49,7 @@
 .gallery__discription br {
   display: none;
 }
+
 .gallery__list {
   padding-left: 0;
   list-style-type: none;

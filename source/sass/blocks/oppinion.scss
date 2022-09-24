@@ -71,7 +71,6 @@
 
 .oppinion__radio {
   position: absolute;
-  left: 0;
   width: 46px;
   height: 46px;
   background-color: $inputs-color;
@@ -104,6 +103,7 @@
 .oppinion__label:hover .oppinion__radio {
   background-color: $decoration-color;
 }
+
 .oppinion__label:active .oppinion__radio {
   background-color: #d5d5d5;
 }

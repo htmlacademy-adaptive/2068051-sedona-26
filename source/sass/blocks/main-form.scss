@@ -27,7 +27,7 @@
   line-height: 26px;
   text-transform: uppercase;
   padding-top: 23px;
-  margin:0 auto;
+  margin: 0 auto;
 
   @include tablet {
     padding-top: 0;
@@ -136,9 +136,9 @@
     border-bottom: none;
   }
 
-  @include tablet  {
+  @include tablet {
     border-bottom: none;
-    border-top: solid 1px #DBDBDB;
+    border-top: solid 1px #dbdbdb;
     padding: 0;
   }
 
@@ -156,8 +156,8 @@
 
   @include tablet {
     font-size: 14px;
-    padding-top: 19px;
     margin-top: 0;
+    padding-top: 19px;
   }
 }
 

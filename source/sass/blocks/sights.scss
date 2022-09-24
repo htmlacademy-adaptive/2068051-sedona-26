@@ -1,6 +1,5 @@
 .sights {
   list-style-type: none;
-  // margin: 0;
 
   @include tablet {
     margin-top: 46px;
@@ -48,10 +47,10 @@
   }
 
   @include tablet {
-   width: 224px;
-   text-align: left;
-   padding-left: 52px;
-   box-sizing: border-box;
+    width: 224px;
+    text-align: left;
+    padding-left: 52px;
+    box-sizing: border-box;
   }
 
   &:not(:nth-child(2n)) {
@@ -125,6 +124,7 @@
 .sights__label:hover .sights__checkbox {
   background-color: $decoration-color;
 }
+
 .sights__label:active .sights__checkbox {
   background-color: #d5d5d5;
 }
